@@ -1,0 +1,578 @@
+<!doctype html>
+<html>
+<head>
+	          	       <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Rachel Max is a designer, art director, and creative coder">
+    <meta name="keywords" content="Rachel Max, London, Hamburg, San Francisco, NYC, digital product design, designer, interaction design, UI and UX design, motion design, physical computing, code-based work, interactive, new media, immersive, emerging technology">
+    <meta name="author" content="Rachel Max">
+	<meta property="og:image" content="images/R_Circle.jpg" width="200"/>
+    <link rel="shortcut icon" href="ico/Rachel.ico">
+
+
+
+<title>Search Design</title>
+
+	
+	  <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/site_style.css" rel="stylesheet">
+    <link href="css/portfolio_style.css" rel="stylesheet">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+
+</head>
+
+
+<body>
+
+<!-- NAV     -->    
+        
+    <div id="nav-placeholder">
+    </div>
+    
+<script>
+    $.get("navigation.html", function(data){
+        $("#nav-placeholder").replaceWith(data);
+    });
+</script> 
+
+<!--end nav --> 
+	
+	
+		 <!-- Margin Div -->
+		   <div class="row" style="height: 20px;">
+            <div class="col-12"></div>
+        </div><!-- end of Margin Div -->
+ 
+	
+	<!-- Begin page content -->
+	
+	<div class="container justify-content-center mb-3">
+	<div class="row">
+   <div class="mx-auto">
+	<img src="images/Portfolio/CAPinside/CAPinside_Logo.png" width="120" alt=""/></div>
+	 </div>
+	</div>
+	
+<div class="mt-5 container col-10 col-xl-8">
+<center><workpageh1>Search Design</workpageh1></center><br>
+  <p1>
+      
+      Once the new <a href="Portfolio_CI_Profiles.html" target="_blank">Investor Profiles</a> and <a href="Portfolio_CI_Messaging.html" target="_blank">Messaging Features</a> were built on <a href="https://capinside.com/" target="_blank">CAPinside</a>, it was time to redesign Search and Search Results using <a href="https://www.algolia.com" target="_blank">Algolia</a> to upgrade search functions. Algolia offers predictive search and uses AI to deliver fast, relevant results and recommendations. Algolia also has powerful analytics which uses frequent searches and popular results to both catalog what customers are most interested in and make sure that customers were able to find what they were looking for.
+<br><br>
+Other than increasing speed, redesigning Search and Search Results allowed us to to emphasize the community aspect of CAPinside by displaying investor profiles at the top of recommendations and results.
+   </p1>  </div>
+      
+      
+       <div class="container col-10 col-xl-8 mt-3 lineh1">
+      <p1> There were two main conceptual challenges of this project:<br>
+        <a href="#Search"> Searching</a> - what are the interactions when a user conducts a search?<br>
+          <a href="#SearchResults">Search Results </a> - how are search results best displayed?<br> 
+    </p1>
+	</div>
+	  
+
+	
+<div class="mt-5 container col-10 col-xl-8">
+	  <center><workpageh1>My Role</workpageh1></center><br>
+		  <p1> As Principal Product Designer, I mostly worked alone during the research and design phase (Corona Virus lockdown), checking in with the Head of Product with my findings, recommendations, ideas, and designs every few days. I was responsible for the 
+			  <process2>UX & UI design</process2>, 
+			  <process2>interaction design</process2>, 
+			  <process2>motion design</process2>, 
+			   <process2>and visual design</process2>.   
+			  I also worked closely with the development team doing design reviews and <process2>art direction</process2> to implement Search and Search Results as designed.
+			   <br><br>
+			  Tools used: <process2>Sketch</process2> for the design, <process2>Illustrator</process2> for SVG asset creation, <process2>Photoshop</process2> for image editing, and <process2>Zeplin</process2> for a smooth hand off to the development team.
+			 
+ </p1>
+</div>
+	
+	         <div class="mt-3 container col-12 col-xl-10">
+ <center><img src="images/Portfolio/CAPinside/Search/1.Searching/6.Search_MacBook.png" class="figure-img img-fluid" alt=""></center> 
+</div>
+    
+    
+    
+	
+<div class="mt-5 container col-10 col-xl-8" id="Search">
+<center><workpageh1>Searching</workpageh1></center></div>
+    
+    
+    <div class="mt-2 container col-10 col-md-6 col-lg-4">
+	  <center>  <img src="images/Portfolio/CAPinside/Search/1.Searching/0.Active_Search_Bar.png" class="figure-img img-fluid" alt=""></center>
+    </div>
+    
+   <div class="mt-3 container col-10 col-xl-8"> 
+  <p1>
+  There were a few use cases to consider: <br><br>
+      
+      <blogbold>1) What happens as letters are entered? </blogbold><br><br>
+      Algolia provides a super fast predictive search. We determined to use that as people typed. <br><br>
+     <blogbold> 2) What happens when search is selected but no letters have been entered yet?</blogbold> <br><br>
+     The Head of Product Design and I decided to follow the LinkedIn model and show search history & recommendations for popular search terms.  <br><br>
+      <blogbold>3) Is showing search history useful? </blogbold> <br><br>
+      Searched terms are saved in order to provide faster results and in order to personalize results to align with a customer’s preferences and interests. We determined to be transparent about storing that data and to also allow a customer to delete this history.
+      
+      
+ </p1>
+	 
+		</div>
+				  
+				  
+		<div class="mt-5 container col-10 col-xl-8">
+			<center><workpageh1>Early Designs</workpageh1></center><br>
+  <p1>
+At first I thought it would be a good idea to promote categories as a way to communicate the diverse content on the site. I experimented with a fly-out menu and a dropdown menu.
+	   </p1>
+    <div class="row mt-4">
+      
+		<div class="col-12 col-md-8">
+			<center>
+    <img src="images/Portfolio/CAPinside/Search/1.Searching/a.EarlyDes_CategorySearch.png" class="figure-img img-fluid" alt="SideBar_messages1">
+				</center>
+        </div>
+		
+<div class="col-12 col-md-4">
+		<center>			
+  <img src="images/Portfolio/CAPinside/Search/1.Searching/b.EarlyDes_CategorySearch.png" class="figure-img img-fluid" alt="SideBar_messages2">
+	</center>
+</div>
+	
+</div>
+
+    </div>
+		
+		
+			
+	<div class="mt-5 container col-10 col-xl-8">
+  <p1>
+I was initially drawn to the fly-out menu as it felt connected to the Search field and the space of the page could be used. It would also solve for when the side navigation bar was collapsed. Here I am trying to organize results by categories with different treatments for links and category icons.
+	   </p1>
+    <div class="row mt-4">
+      
+	  <div class="col-12 col-md-6">
+			<center>
+    <img src="images/Portfolio/CAPinside/Search/1.Searching/d.EarlyDes_Flyout2.png" class="figure-img img-fluid" alt="">
+			  </center>
+        </div>
+		
+<div class="col-12 col-md-6">
+		<center>			
+  <img src="images/Portfolio/CAPinside/Search/1.Searching/e.EarlyDes_Flyout3.png" class="figure-img img-fluid" alt="">
+	</center>
+</div>
+	
+</div>
+
+    </div>
+    
+    	<br>
+	 
+	   <div class="mt-5 container col-10 col-xl-8">
+		   <center><workpageh1>Before Text Input without Search History</workpageh1></center><br>
+ <p1>
+The dropdown menu designs yielded better results in hallway testing so I moved forward with that method.
+<br><br>
+In this design there is no search history - perhaps this is the first search for this user or maybe they cleared their history. Six top trending terms are displayed which informs the user or these trends and that these topics can be searched on the platform.
+    </p1> <br><br>
+     	<center><img src="images/Portfolio/CAPinside/Search/1.Searching/1.Inactive_Search_nohistory.png"  class="figure-img img-fluid" alt="Early Design 1">  </center>         
+ </div>  
+	  
+           <div class="mt-4 container col-10 col-xl-8">  
+ <p1>
+            I tried the dropdown menu in other colors just to make sure the grey was the right choice and yeah, grey was the right choice 😉
+</p1>
+
+               <div class="row mt-3">
+	  <div class="col-12 col-md-6">
+		<center>
+    <img src="images/Portfolio/CAPinside/Search/1.Searching/1b.Inactive_Search_nohistory_gr.png" class="figure-img img-fluid" alt="">
+ </center>
+	 </div>	
+  
+                   <div class="col-12 col-md-6">
+<center>  <img src="images/Portfolio/CAPinside/Search/1.Searching/1c.Inactive_Search_nohistory_white.png" class="figure-img img-fluid" alt=""></center>
+ </div>	
+                   
+</div>  
+	</div>  
+    
+    <br>
+    
+			  
+<div class="mt-5 container col-10 col-xl-8">
+            <center><workpageh1>Before Text Input with Search History</workpageh1></center><br>
+ <p1>
+In order to accommodate search history, I reduced the number of trending topics and added four recent searches. 
+<br><br>
+The option to clear the search history is easy find and when selected, prompts this modal pictured to make sure this is an intentional and deliberate action. 
+<br><br>
+CAPinside uses search terms to curate content such as news articles. Erasing search history impacts the relevance of future searches and could potentially impact curated content.
+ </p1>
+         <br><br>
+     	<center><img src="images/Portfolio/CAPinside/Search/1.Searching/2.Inactive_Search_history_modal.png"  class="figure-img img-fluid" alt="">  </center>   
+</div>  
+
+   
+      <div class="mt-5 container col-10 col-xl-8">
+          <center><workpageh1>Predictive Search</workpageh1></center><br>
+        <p1>
+Once you start typing, predictive search offers suggestions, organized by category. The categories are limited to one or two results except for the investor profiles, which are prioritized. 
+<br><br>
+We determined that limiting the search results within categories would be a good way to not overwhelm customers. I made a few new icons including the podcast, video, and article icons.</p1>
+            
+             <br><br>
+     	<center><img src="images/Portfolio/CAPinside/Search/1.Searching/4.Predictive_Search_limitedresults.png"  class="figure-img img-fluid" alt="">  </center>              
+   </div>
+        
+
+
+          <div class="mt-5 container col-10 col-xl-8">
+          <center><workpageh1>Search - Mobile</workpageh1></center><br>
+    <div class="row">
+        <div class="col">
+        <p1>
+The mobile view is much the same as the web views since the dropdown is directly under the search bar. 
+<br><br>   
+The full width of the viewport is used in order to minimize distractions from the navigation bar. Fewer search history results and fewer suggested searches are displayed to allow room for the keyboard.
+     <br><br> 
+</p1>
+        </div>
+<div class="col-xs-10 col-md-6">
+ <center><img src="images/Portfolio/CAPinside/Search/1.Searching/5.Mobile-Search.png" class="figure-img img-fluid" alt=""></center> 
+</div>
+
+    </div>
+</div> 
+    <br><br>
+    
+    
+ 
+    <!-- SEARCH RESULTS SEARCH RESULTS SEARCH RESULTS SEARCH RESULTS SEARCH RESULTS SEARCH RESULTS -->
+     <!-- SEARCH RESULTS SEARCH RESULTS SEARCH RESULTS SEARCH RESULTS SEARCH RESULTS SEARCH RESULTS -->
+     <!-- SEARCH RESULTS SEARCH RESULTS SEARCH RESULTS SEARCH RESULTS SEARCH RESULTS SEARCH RESULTS -->
+     <!-- SEARCH RESULTS SEARCH RESULTS SEARCH RESULTS SEARCH RESULTS SEARCH RESULTS SEARCH RESULTS -->
+     <!-- SEARCH RESULTS SEARCH RESULTS SEARCH RESULTS SEARCH RESULTS SEARCH RESULTS SEARCH RESULTS -->
+     <!-- SEARCH RESULTS SEARCH RESULTS SEARCH RESULTS SEARCH RESULTS SEARCH RESULTS SEARCH RESULTS -->
+ 
+    
+    
+    
+    <hr class="style1" id="SearchResults">
+
+          <div class="mt-5 container col-10 col-xl-8">
+          <center><workpageh1>Search Results</workpageh1></center><br>
+        <p1>
+To wrap my head around this feature better, I conducted a competitive analysis to see how other platforms handle search results.
+I analyzed the best performers and evaluated which of the best practices would be suited to the CAPinside search results.
+ </p1> 
+               <br><br>
+     	<center><img src="images/Portfolio/CAPinside/Search/2.Search Results/1.SearchResults_Research.png"  class="figure-img img-fluid" alt="">  </center>    
+              
+</div>
+    
+    
+             <div class="mt-5 container col-10 col-xl-8">
+          <center><workpageh1>Previous Search Results</workpageh1></center><br>
+        <p1>
+Alongside the competitive analysis I identified the friction points of the current search results. These search results provided an unsatisfactory experience. Five categories were displayed even if there were no results in a category. A value of 0 would be shown in the number of results instead of declining to show an empty category. The previews of the results were confined to a tight space due to the layout there wasn’t a lot of useful information displayed.
+ </p1> 
+               <br><br>
+     	<center><img src="images/Portfolio/CAPinside/Search/2.Search Results/2.Old_SearchResults.png"  class="figure-img img-fluid" alt="">  </center>    
+              
+</div>
+    
+     
+    <div class="mt-5 container col-10 col-xl-8">
+          <center><workpageh1>Search Results Wireframe</workpageh1></center><br>
+    <div class="row">
+        <div class="col">
+        <p1>
+I knew relatively quickly that I wanted to use sections with a maximum number of results show in order to show a greater variety of search without having to scroll a lot.
+ <br><br> 
+Working with the Head of Product Design we prioritized the results list. These sections could be easily moved later due to their modular nature.</p1>
+   
+      
+          <div class="mx-auto mt-3 lineh1" style="width: 140px;">
+         <p1>  Result Priority: </p1> <br>
+ 
+           <p1_bold>
+      1) Profiles<br>
+	2) Articles<br>
+	3) Podcasts<br>
+	4) Videos<br>
+	5) Funds<br>
+	6) Events<br>
+          </p1_bold> 
+              <br>             
+ </div>
+  </div>
+ 
+        
+        
+        
+        
+<div class="col-xs-8 col-md-8">
+ <center><img src="images/Portfolio/CAPinside/Search/2.Search Results/3.SearchResults_Wireframe.png" class="figure-img img-fluid" alt=""></center> 
+</div>
+
+    </div>
+</div> 
+
+    
+ <div class="mt-5 container col-10 col-xl-8">
+          <center><workpageh1>Early Design</workpageh1></center><br>
+        <p1>
+In this early design, the search results categories are text buttons. The investor profile cards are super simple and lack color. The section titles are on the left and the “see all in a category” button is below the section.
+ </p1> 
+               <br><br>
+     	<center><img src="images/Portfolio/CAPinside/Search/2.Search Results/4.EarlyDesign.png"  class="figure-img img-fluid" alt="">  </center>    
+              
+</div>
+ 
+    
+    
+     <div class="mt-5 container col-10 col-xl-8">
+          <center><workpageh1>Final Design</workpageh1></center><br>
+        <p1>
+In the final design for Search Results, the categories are more clearly defined as are the profile cards. The “see all” button has been moved above the section and is a brand green hyperlink. The section titles have been centered and made bigger and bolder.
+<br><br>
+The “All Search Results” category is selected which displays a variety of results. When a category is selected, then only those results are shown. Each section utilizes the same conical card design and layout for easier coding and visual cohesion.
+ </p1> 
+              
+</div>
+ 
+
+               <div class="mt-4 container col-10 col-xl-8">  
+ <p1> <center>(The scrollable page is divided into two parts for this portfolio. Click on the images to enlarge them.) </center>
+</p1>
+
+               <div class="row mt-3">
+	  <div class="col-12 col-md-6">
+		<center>
+          <a href="images/Portfolio/CAPinside/Search/2.Search Results/5.All_Search_Results_1.png" target="_blank"><img src="images/Portfolio/CAPinside/Search/2.Search Results/5.All_Search_Results_1.png" class="figure-img img-fluid" alt=""></a>
+        </center>
+	 </div>	
+  
+                   <div class="col-12 col-md-6">
+<center>
+  <a href="images/Portfolio/CAPinside/Search/2.Search Results/6.All_Search_Results_2.png" target="_blank"><img src="images/Portfolio/CAPinside/Search/2.Search Results/6.All_Search_Results_2.png" class="figure-img img-fluid" alt=""></a>
+</center>
+ </div>	
+                   
+</div>  
+	</div>  
+    
+    
+    
+    <div class="mt-5 container col-10 col-xl-8">
+          <center><workpageh1>Category Button States</workpageh1></center><br>
+    <div class="row">
+        <div class="col">
+        <p1>
+The search categories are interactive rollover buttons. In responsive web the rollover doesn't work in the mobile view but the selected state will display briefly being displaying the category contents. Here you can see the each of the states and the specs made for the development team.
+ <br><br>     
+</p1>
+            
+        </div>
+<div class="col-xs-10 col-md-8">
+ <center><img src="images/Portfolio/CAPinside/Search/2.Search Results/6a.Search-Results-Categories.jpg" class="figure-img img-fluid" alt="">
+     <br><br> 
+   <img src="images/Portfolio/CAPinside/Search/2.Search Results/6b.Category_Rollover_States.png" class="figure-img img-fluid" alt=""></center> 
+</div>
+
+    </div>
+</div> 
+
+    <br>
+    
+ <div class="mt-5 container col-10 col-xl-8">  
+       <center><workpageh1>Selected Category Examples</workpageh1></center><br>
+     
+ <div class="row">
+     <div class="col-12 col-md-6">
+		<center>
+		  <a href="images/Portfolio/CAPinside/Search/2.Search Results/7.Category_Results_Profiles.png" target="_blank"><img src="images/Portfolio/CAPinside/Search/2.Search Results/7.Category_Results_Profiles.png" class="figure-img img-fluid" alt=""></a>
+    </center> </div>	
+
+     <div class="col-12 col-md-6">
+<center>
+  <a href="images/Portfolio/CAPinside/Search/2.Search Results/8.Category_Results_Articles.png" target="_blank"><img src="images/Portfolio/CAPinside/Search/2.Search Results/8.Category_Results_Articles.png" class="figure-img img-fluid" alt=""></a>
+</center> </div>	
+                   
+</div>  
+	</div>  
+    
+    <br>
+    
+  		<div class="mt-5 container col-10 col-xl-8">
+			<center><workpageh1>Search Results Mobile Design</workpageh1></center><br>
+  <p1>
+For mobile, the cards switch from landscape to portrait in order to make the best use of the format. The search results categories align to the center of the space for good balance. None of the interactions change.
+	   </p1>
+    <div class="row mt-4">
+      
+	  <div class="col-6 col-md-3">
+			<center>
+    <img src="images/Portfolio/CAPinside/Search/2.Search Results/9.All_Search_Results_Mobile_1.png" class="figure-img img-fluid" alt="">
+			  </center>
+        </div>
+		
+<div class="col-6 col-md-3">
+		<center>			
+  <img src="images/Portfolio/CAPinside/Search/2.Search Results/10.All_Search_Results_Mobile_2.png" class="figure-img img-fluid" alt="">
+	</center>
+</div>
+		
+	  <div class="col-6 col-md-3">
+				<center>		
+  <img src="images/Portfolio/CAPinside/Search/2.Search Results/11.All_Search_Results_Mobile_3.png" class="figure-img img-fluid" alt="">
+		  </center>
+</div>
+        
+        	  <div class="col-6 col-md-3">
+				<center>		
+  <img src="images/Portfolio/CAPinside/Search/2.Search Results/12.All_Search_Results_Mobile_4.png" class="figure-img img-fluid" alt="">
+		  </center>
+</div>
+        
+        
+	
+    </div>
+	  </div>	
+    
+    
+    
+    	<div class="mt-5 container col-10 col-xl-8">
+			<center><workpageh1>Speculative Video Card Redesign</workpageh1></center><br>
+  <p1>
+The video cards used a large play icon which obscured the content - especially faces. I speculatively designed a smaller play icon which also displayed the length of the video. It is helpful to know the length of a video before you commit.
+	   </p1>
+     </div>
+    
+   
+    <div class="mt-2 container col-10 col-xl-8">
+    <div class="row mt-4">
+      
+	  <div class="col-sm-10 col-md-6">
+			<center>
+    <img src="images/Portfolio/CAPinside/Search/2.Search Results/14.VideoImage_Before.png" class="figure-img img-fluid" alt="">
+			  </center>
+      </div>
+		
+        	  <div class="col-sm-10 col-md-6">
+			<center>
+    <img src="images/Portfolio/CAPinside/Search/2.Search Results/15.VideoImage_After.jpg" class="figure-img img-fluid" alt="">
+			  </center>
+        </div>
+	
+    </div>
+	  </div>	
+    
+    
+    <div class="mt-2 container col-10 col-xl-8">
+    <div class="row mt-4">
+      
+		<div class="col-sm-10 col-md-6">
+			  <p1>
+The purple color is not a final choice but it tested best on a large number of backgrounds. I also tested a CAPinside green and a black & white version.
+	   </p1><br><br>
+        </div>
+		
+<div class="col-4 col-md-2">
+		<center>			
+  <img src="images/Portfolio/CAPinside/Search/2.Search Results/16a.Video_Overlay1.png" class="figure-img img-fluid w-50" alt="">
+	</center>
+</div>
+		
+		<div class="col-4  col-md-2">
+				<center>		
+  <img src="images/Portfolio/CAPinside/Search/2.Search Results/16b.Video_Overlay2.png" class="figure-img img-fluid w-50" alt="">
+			</center>
+</div>
+	
+		<div class="col-4  col-md-2">
+				<center>		
+  <img src="images/Portfolio/CAPinside/Search/2.Search Results/16c.Video_Overlay3.png" class="figure-img img-fluid w-50" alt="">
+			</center>
+</div>
+
+    </div>
+	  </div>		
+		<br>
+    
+  <div class="mt-4 container col-10 col-xl-8">  
+      	<center><workpageh1>Event Tiles</workpageh1></center><br>
+ <p1>
+          Event Tiles were introduced as part of Search Results. I worked with a PO to determine that we needed two types of event cards - a live event tile such as a conference or talk and an online event such as a webinar. <br><br>
+     Like the other cards, Events resize depending on the size of the responsive view. (If you are viewing this on a phone screen, turn it to landscape the see the wider cards.)
+     
+</p1>    
+       </div>	
+    
+    
+   <div class="mt-4 container col-10 col-xl-8 d-none d-md-block">  
+     	<center><img src="images/Portfolio/CAPinside/Search/2.Search Results/18.Event_Live_LS.png"  class="figure-img img-fluid" alt="">  </center>   
+     	<center><img src="images/Portfolio/CAPinside/Search/2.Search Results/17.Event_Webinar_LS.png"  class="figure-img img-fluid" alt="">  </center>   
+    </div> 
+       
+       
+   <div class="mt-3 container col-10 col-xl-8"> 
+               <div class="row mt-1">
+	  <div class="col-12 col-md-6">
+		<center>
+    <img src="images/Portfolio/CAPinside/Search/2.Search Results/20.Event_Live_P.png" class="figure-img img-fluid" alt="">
+ </center>
+	 </div>	
+  
+                   <div class="col-12 col-md-6">
+<center>  <img src="images/Portfolio/CAPinside/Search/2.Search Results/19.Event_Webinar_P.png" class="figure-img img-fluid" alt=""></center>
+ </div>	
+                   
+</div>  
+</div> 
+    <br>
+    
+   <div class="mt-3 container col-12 col-xl-10">
+ <center><workpageh1>Results</workpageh1></center>
+       
+<center>
+  <video class="100%" height="800" poster="Quicktimes/PosterFrames/CI_SearchResults.jpg" controls style="max-width:100%; height:auto" >
+    <source src="Quicktimes/CI_SearchResults.mp4" type="video/mp4">
+    <source src="Quicktimes/CI_SearchResults.webm" type="video/webm">
+    Your browser does not support the video tag. </video>
+  </center>
+	</div>
+        
+        
+<div class="mt-3 container col-10 col-xl-8">
+			<p1> Along with the new <a href="Portfolio_CI_Profiles" target="_blank">Investor Profiles</a> and <a href="Portfolio_CI_Messaging.html" target="_blank">Messaging Feature</a>, refining Search and Search Results: <br><br>
+				<ul>
+<li>Drastically improved the search speed which increased the average browsing time </li>
+<li>Enabled investors to more easily find and engage with each other</li>
+<li>Created an increase in the value proposition of the platform</li>
+<li>Created a greater sense of community</li>
+     </ul>
+The customer feedback was resoundingly positive and engagement increased 30% in the first month. CAPinside was acquired!
+</p1> 		 
+  </div>
+
+	
+	
+<!-- div 3 Bottom Margin -->
+<div class="row" style="height: 100px;">
+<div class="col-12"></div>
+</div>
+	 
+	 
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+	
+  <script src="scripts/image-swap.js"></script>
+	
+</body>
+</html>
+	 

@@ -1,0 +1,264 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Rachel Max is a designer, art director, and creative coder">
+    <meta name="keywords" content="Rachel Max, London, Hamburg, San Francisco, NYC, digital product design, designer, interaction design, UI and UX design, motion design, physical computing, code-based work, interactive, new media, immersive, emerging technology">
+    <meta name="author" content="Rachel Max">
+	<meta property="og:image" content="images/R_Circle.jpg" width="200"/>
+    <link rel="shortcut icon" href="ico/Rachel.ico">
+
+
+<title>First Pillow Prototype Process</title>
+
+	
+	  <link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/site_style.css" rel="stylesheet">
+	<link href="css/portfolio_style.css" rel="stylesheet">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+
+</head>
+
+
+<body>
+
+<!-- NAV     -->    
+        
+    <div id="nav-placeholder">
+    </div>
+    
+<script>
+    $.get("navigation.html", function(data){
+        $("#nav-placeholder").replaceWith(data);
+    });
+</script> 
+
+<!--end nav --> 
+	
+	
+	
+		 <!-- Margin Div -->
+		   <div class="row" style="height: 20px;">
+            <div class="col-12"></div>
+        </div><!-- end of Margin Div -->
+ 
+	
+	<!-- Begin page content -->
+	
+	
+	  <div class="row mt-3">
+    <div class="col-1 col-xl-2"></div>
+ <div class="col">
+
+	 <center><workpageh1>First Pillow Prototype Process</workpageh1></center>
+	
+	 	 <div class="mt-5">
+	<blogtitle>Soft Circuits</blogtitle>
+	<br><br>
+			<p1>I began by researching soft circuits. It's a great time to hole up in your lab and ask the internet things. The websites I depend on most are <a href="https://www.adafruit.com" target="new">Adafruit</a>, <a href="http://www.kobakant.at/DIY/" target="new">Kobakant</a>, <a href="https://www.sparkfun.com" target="new">Sparkfun</a>, and <a href="https://www.instructables.com" target="new">Instructables</a>. This was my first soft circuit. It was fun to build but needed to be modified for a softer touch. </p1>
+			</div>
+
+	 
+	 <div class="mt-3">
+		 <center>
+       <video class="100%" height="540" poster="Quicktimes/PosterFrames/PP_InitialSoftButton.jpg" controls style="max-width:100%; height:auto" >
+	<source src="Quicktimes/PP_InitialSoftButton.mp4" type="video/mp4">
+	<source src="Quicktimes/PP_InitialSoftButton.webm" type="video/webm">
+  Your browser does not support the video tag.
+</video>
+		 </center>
+        </div>
+	 
+	 
+	 
+	<div class="row mt-5">
+ <div class="col-md-6 col-lg-4 mb-3">
+<blogtitle>Conductive Fabric</blogtitle><br><br>
+<p1>There are a lot of conductive fabrics available – from tape to fabric to yarn. I got an assortment from <a href="https://www.lessemf.com/fabric1.html" target="new">LessEMF</a> to test different sensitivity.</p1>
+        </div>
+        <div class="col">
+        <img src="images/Portfolio/Pillow/Process/Fabrics.jpg" class="figure-img img-fluid" alt="Responsive Figure">
+        </div>
+	    </div>
+	 
+	 
+	 	<div class="mt-5">
+			<blogtitle>Velostat</blogtitle><br><br>
+	<p1>Velostat can be a great resistance measurement fabric which is interesting if one wanted to explore different button responses based on pressure. While initially excited by early results using an Arduino Uno, I found the Velostat to be too sensitive regardless of fabric type.</p1>
+        </div>
+	
+
+	 <div class="row mt-4">
+        <div class="col-sm-6">
+        <img src="images/Portfolio/Pillow/Process/TouchResults.jpg" class="figure-img img-fluid" alt="Responsive Figure">
+        </div>
+         <div class="col-sm-6">
+	 <img src="images/Portfolio/Pillow/Process/TestTouchUno.jpg" class="figure-img img-fluid" alt="Responsive Figure">
+        </div>
+	    </div>
+	
+<div class="mt-3">
+	<center>
+<video class="100%" width="960" poster="Quicktimes/PosterFrames/PP_ConductiveMat2.jpg" controls style="max-width:100%; height:auto" >
+<source src="Quicktimes/PP_ConductiveMat2.mp4" type="video/mp4">
+<source src="Quicktimes/PP_ConductiveMat2.webm" type="video/webm">
+  Your browser does not support the video tag.
+</video></center>
+</div>
+	 
+	
+ <div class="mt-3">
+<center>
+<video class="100%" width="960" poster="Quicktimes/PosterFrames/PP_ConductiveMat1.jpg" controls style="max-width:100%; height:auto" >
+<source src="Quicktimes/PP_ConductiveMat1.mp4" type="video/mp4">
+<source src="Quicktimes/PP_ConductiveMat1.webm" type="video/webm">
+  Your browser does not support the video tag.
+</video>
+</center>
+</div>
+						
+
+	 
+	 	<div class="row mt-5">
+ <div class="col-md-6 col-lg-4 mb-3">
+<blogtitle>Button Location</blogtitle><br><br>
+<p1>This was an early sketch to conceptualize button placement.</p1>
+        </div>
+        <div class="col">
+        <img src="images/Portfolio/Pillow/Process/SoftButtonLocation.jpg" class="figure-img img-fluid" alt="Responsive Figure">
+        </div>
+	    </div>
+	 
+	 
+
+ <div class="mt-5"> 	
+	<blogtitle>Drilling Holes</blogtitle>
+				<br><br>
+			<p1>To make a nice button using conductive fabric, the best way I can find so far is separate two pieces of conductive fabric by a thicker layer of fabric with holes cut out so that when contact is made, the two conductive fabrics meet and trigger the audio. Cutting these holes by hand with a scissors gets messy so I found <a href="https://www.amazon.com/gp/product/B00687UXUG/ref=oh_aui_detailpage_o08_s00?ie=UTF8&psc=1
+" target="new">hole punching drill bits</a>. The fabric (neoprene) did not comply but tests got better once I stabilized the fabric with cotton.</p1>
+	</div>	
+		
+	 
+	 <div class="mt-3">
+<center>
+<video class="100%" width="960" poster="Quicktimes/PosterFrames/PP_DrillingHoles1.jpg" controls style="max-width:100%; height:auto" >
+	<source src="Quicktimes/PP_DrillingHoles1.mp4" type="video/mp4">
+				<source src="Quicktimes/PP_DrillingHoles1.webm" type="video/webm">
+  Your browser does not support the video tag.
+</video>
+</center>
+</div>
+
+	 
+	 	<div class="row mt-5">
+ <div class="col-md-2 col-lg-4 mb-3">
+<p1>Drilling into stabilized fabric proved best</p1>
+        </div>
+        <div class="col">
+       <center>
+<video class="100%" width="600" poster="Quicktimes/PosterFrames/PP_DrillingHoles2.jpg" controls style="max-width:100%; height:auto" >
+<source src="Quicktimes/PP_DrillingHoles2.mp4" type="video/mp4">
+				<source src="Quicktimes/PP_DrillingHoles2.webm" type="video/webm">
+  Your browser does not support the video tag.
+</video>
+</center>
+        </div>
+	    </div>
+	 
+	 
+		<div class="mt-5">			
+<blogtitle>The brain inside the pillow</blogtitle>
+	<br><br>
+			<p1>I researched boards with MP3 capabilities and determined I was interested in finding a board that supported stereo, 44.1 kHz sound, had an onboard amplifier, and had a headphone jack (handy for testing). I decided to work with the <a href="https://www.sparkfun.com/products/11013" target="new">LilyPad MP3</a>. I built a box to keep it safe from the soft pillow stuffing and used Velcro as a handy way to keep it closed. I added a power switch so I could turn the pillow on and off without having to unzip it and dig inside.</p1>
+		  </div>
+	
+	 
+	 	 <div class="row mt-4">
+        <div class="col-sm-6">
+        <img src="images/Portfolio/Pillow/Process/BoxwithBoard.jpg" class="figure-img img-fluid" alt="Responsive Figure">
+        </div>
+         <div class="col-sm-6">
+	 <img src="images/Portfolio/Pillow/Process/BoardwithVelcro.jpg" class="figure-img img-fluid" alt="Responsive Figure">
+        </div>
+	    </div>
+	 
+	 
+	 
+	 
+	 	<div class="row mt-5">
+ <div class="col-sm6 col-md-8 mb-3">
+<blogtitle>Speakers and Wires</blogtitle><br><br>
+<p1><p1>I thought a lot about speakers and what sort of interaction I wanted to create. I found <a href="https://www.staples.com/sangean-100-pillow-speaker-white/product_IM1CL4150?cid=PS:GooglePLAs:IM1CL4150&ci_src=17588969&ci_sku=IM1CL4150&KPID=IM1CL4150&cvosrc=PLA.google-SALES.Audio&cvo_crid=225680147734&cvo_campaign=951154545&gclid=Cj0KCQiAv_HSBRCkARIsAGaSsrD6st9tZohybTe-JvNbpXj4NHqLTUWIDmlUyNypn2bem44HpE0sfeYaAmmBEALw_wcB&gclsrc=aw.ds
+
+" target="new">pillow speakers</a>, <a href="https://www.sparkfun.com/products/10722" target="new">tiny speakers</a>, and eventually these <a href="https://www.adafruit.com/product/1313
+" target="new">8 Ohm 1 Watt speakers</a>. I also thought about creating my own speakers with <a href="https://www.sparkfun.com/products/10975" target="new">surface transducers</a> but at the moment I’m still pursuing the 1 amp speakers. I determined that part of the project was to become part of the experience so that nearby people could hear the audio and witness the participant’s reaction. </p1></p1>
+        </div>
+        <div class="col">
+        <img src="images/Portfolio/Pillow/Process/speaker_foam_idea.jpg" class="figure-img img-fluid" alt="Responsive Figure">
+        </div>
+	    </div>
+	 
+ 
+	<div class="mt-3">	
+			<p1>I was lucky to find this amazingly thin <a href="https://www.adafruit.com/product/1970
+" target="new">silicon wire</a> at Adafruit. The battery pictured is for scale. You can see the inside of the pillow just before I soldered the wires to the speakers and then to the board. The prototype is working but naturally, needs to be refined. One task is to bury the speakers in foam to make the surface softer.</p1>
+		
+		 </div>
+	
+			 <div class="row mt-3">
+        <div class="col-sm-6">
+        <img src="images/Portfolio/Pillow/Process/silicon-wire.jpg" class="figure-img img-fluid" alt="Responsive Figure">
+        </div>
+         <div class="col-sm-6">
+	 <img src="images/Portfolio/Pillow/Process/SpeakersInside.jpg" class="figure-img img-fluid" alt="Responsive Figure">
+        </div>
+	    </div>
+	 
+
+				 <div class="mt-5">
+		<blogtitle>	Multiple Buttons</blogtitle>
+				<br><br>
+			<p1>One idea I'm still toying with is to add multiple buttons on the front and back of the pillow to make triggering the audio easier and faster. I prototyped the circuit to see if it would work and it will!</p1>
+</div>
+					 
+	 
+	 
+	  <div class="mt-3">
+<center>
+<video class="100%" width="960" poster="Quicktimes/PosterFrames/PP_MultipleButtons.jpg" controls style="max-width:100%; height:auto" >
+	<source src="Quicktimes/PP_MultipleButtons.mp4" type="video/mp4">
+				<source src="Quicktimes/PP_MultipleButtons.webm" type="video/webm">
+  Your browser does not support the video tag.
+</video>
+</center>
+</div>
+	 
+	 
+	 
+	 
+	 
+   </div>
+	     <div class="col-1 col-xl-2"></div>
+	 </div>
+	 
+	
+	 <!-- div 3 Bottom Margin -->
+<div class="row" style="height: 30px;">
+<div class="col-12"></div>
+</div>
+	 
+	 
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+	
+  <script src="scripts/image-swap.js"></script>
+	
+</body>
+</html>
+	 

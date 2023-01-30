@@ -1,0 +1,207 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Rachel Max is a designer, art director, and creative coder">
+    <meta name="keywords" content="Rachel Max, London, Hamburg, San Francisco, NYC, digital product design, designer, interaction design, UI and UX design, motion design, physical computing, code-based work, interactive, new media, immersive, emerging technology">
+    <meta name="author" content="Rachel Max">
+	<meta property="og:image" content="images/R_Circle.jpg" width="200"/>
+    <link rel="shortcut icon" href="ico/Rachel.ico">
+
+
+<title>Lovecats</title>
+
+	
+	  <link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/site_style.css" rel="stylesheet">
+	<link href="css/portfolio_style.css" rel="stylesheet">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+
+</head>
+
+
+<body>
+
+<!-- NAV     -->    
+        
+    <div id="nav-placeholder">
+    </div>
+    
+<script>
+    $.get("navigation.html", function(data){
+        $("#nav-placeholder").replaceWith(data);
+    });
+</script> 
+
+<!--end nav --> 
+	
+	
+		 <!-- Margin Div -->
+		   <div class="row" style="height: 20px;">
+            <div class="col-12"></div>
+        </div><!-- end of Margin Div -->
+ 
+	
+	<!-- Begin page content -->
+	
+	
+ <div class="row mt-3">
+    <div class="col-1 col-xl-2"></div>
+ <div class="col">
+
+	 
+<center><workpageh1>Lovecats</workpageh1></center><br>
+	  <p1>In this project I use a Leap Motion in conjunction with openFrameworks and C++ to create a playful experience where disembodied cat heads float around a forest and are followed by hearts.</p1>
+
+<div class="mt-4">
+    <div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/336996713" allowfullscreen></iframe>
+	 </div>	 </div>	
+	 
+	<br>
+<p1>Music: <em>Three Trees</em> by Tanlines off the 2010 album <em>Volume On</em></p1>
+	
+	
+<br>
+	 <div class="mt-5">
+<center><workpageh1>Concept</workpageh1></center>
+	 <br>
+<p1>
+This term we explored ways of interfacing with computers beyond more traditionally common inputs such as the keyboard and mouse. We were introduced to interaction through computer vision (including death cameras), Open Sound Control, and via voice control with machine learning. I became interested in exploring a touch-less or invisible interface. An invisible interface allows for less rigid physical interaction than traditional inputs and has greater propensity for discovery which is ultimately more engaging for the user.
+  <br><br>
+The inimitable science fiction writer Arthur C. Clarke <a href="https://en.wikipedia.org/wiki/Clarke's_three_laws" target="_blank">wrote</a>, “any sufficiently advanced technology is indistinguishable from magic” and being able to write code, understand the tools used, and not be limited by a lack of ability allows one to be the magician - to craft the spectacle and experience. Inputs such a Leap Motion or small imperceptible sensors allow interaction to feel and look magical. <br><br>
+Other than utilizing an invisible interface, I was interested in creating a pleasing, enjoyable, fun experience and perhaps something relaxing in the vein of <a href="https://en.wikipedia.org/wiki/Calm_technology" target="_blank">calm technology</a>. I knew I was going to have to do heavy research on the technical side so having the end product be lighthearted made the project fun to work on. </p1></div>
+	 
+	 <br>
+	
+	 
+<div class="mt-5">
+<center><workpageh1>Technical Research and Process</workpageh1></center>
+	 <br>
+<p1>
+I began by researching using a Leap Motion with openFrameworks. I found two add-ons, ofxLeapMotion by Theo Watson and ofxLeapMotion2 by Gene Kogan. After obtaining a Leap Motion Developer License, downloading the most recent SDK, and installing the addons, opted to use Kogan’s ofxLeapMotion2 addon as it supported the second version of the <a href="https://developer.leapmotion.com/#101" target="_blank">LeapMotion SDK </a>and had skeleton tracking including individual finger recognition. I didn’t realize until I was quite invested that ofxLeapMotion2 does not support Gesture Recognition like Theo Watson’s original addon does. I tried combining both addons into one project but wasn’t surprised when it wouldn’t compile. Fingertips are recognized in ofxLeapMotion2 so I decided to use the index fingers of both hands as attraction points. Palms could also be used but I felt that the finger tips were more accurately tracked. <br><br>
+Once I got a working model of LeapMotion in a project, I turned my attention to creating a particle system. Daniel Shiffman’s<a href="https://natureofcode.com/book/chapter-4-particle-systems/" target="_blank"> Nature of Code</a> has an excellent chapter on particle systems as does <a href="http://b.parsons.edu/~traviss/booKs/oF/Mastering openFrameworks - Yanc, Chris_compressed.pdf" target="_blank">Chapter 3 in the Mastering openFrameworks book</a>. I also found several projects and addons on GitHub. I considered using the very sleek <a href="https://github.com/neilmendoza/ofxGpuParticles" target="_blank">ofxGpuParticles</a> but thought is was too polished for the lighthearted interaction I wished to create. <br><br>
+A student at Parsons, <a href="http://www.daniellebeecham.co/parsons/2017/11/29/openframeworks-particle-systems" target="_blank">Danielle Beecham</a> posted her <a href="https://github.com/danibeech/particlesystemlaser" target="_blank">code</a> for a flocking particle system and I thought instead of trying to recreate one from scratch I could use this suitable code and modify it to create desired interaction. Her particle system uses the Mouse X and Y as attractions points, sound is triggered on a mouse press that also loads a different particle system. I removed these details, added the Leap Motion attraction points, and modified the velocity, drag, force, and position to create what I was looking for. I also added a custom heart particle instead of ellipses and added a Lerp to change the color of the particles based on distance from the attraction point. <br><br>
+Once I had a baring on the organization I focused on the interaction and overall aesthetic. I used Illustrator to create the images and output 1x PNGs with transparency and using ofImage, I drew the cat heads at the index finger attraction points. I debated using SVGs but previous explorations with SVGs proved unsuccessful. Even though I made sure the alpha channel was included in the PNGs, I had some issues with the transparency seen in this test GIF where the particles weren’t wrapping around the trees correctly. Adding <a href="https://forum.openframeworks.cc/t/solved-issues-with-png-transparency-for-a-custom-particle-system/32491" target="_blank">these two lines</a> of code fixed it. </p1></div>
+	 
+		 	 
+	 <center>
+		 <figure class="figure mt-5">		
+<img src="images/Portfolio/Lovecats/alpha_issues.gif" class="figure-img img-fluid" alt="Responsive Figure">
+			 <figcaption><blogvideotext>test GIF showing Alpha Issues</blogvideotext></figcaption>
+</figure>  
+	</center>
+	
+
+	  <div class="mt-5">
+<center><workpageh1>Future Development</workpageh1></center>
+	 <br>
+<p1>
+I would like to gameify the experience and create more of a narrative. Also, I’d love to add an interaction when the cat heads touch and preferably the heart stealing would be more gradual instead of instantaneous. I absolutely love the invisible interface using a Leap Motion allows. I will look into marrying the addons or using the patch I was sent to enable both gesture support and skeleton tracking for future development or for another project.</p1></div>
+	
+	<br>
+	 <div class="mt-5">
+<center><workpageh1>Self Evaluation</workpageh1></center>
+	 <br>
+<p1>
+I’m proud of myself for using a device we did not cover in class or in any of our oF assignments. I worked independently researching addons, using Github to clone addons, and to try version control. I reached out for help to organize the project using classes but was able to do most of the coding overall. I built on previous knowledge of vectors (!) to deal with particle color and the number of hands interaction. I also figured out how to add a Run Script in the Build Phase to facilitate the use to the ofxLeapMotion addons. It took me a while to wrap my head around the technical side of the LeapMotion and I feel I could take it further in the future or even over the Summer.</p1></div>
+	
+	
+ <div class="mt-5">
+<center><workpageh1>References</workpageh1></center>
+	 <br>	
+
+	<p1>
+Most references are included in the hyperlinks above but here are some other ones.......  <br><br>
+
+<a href="https://github.com/ofTheo/ofxLeapMotion" target="_blank">ofxLeapMotion</a> by Theo Watson<br>
+<a href="https://github.com/genekogan/ofxLeapMotion2" target="_blank">ofxLeapMotion2</a> by Gene Kogan <br><br>
+		
+			On using Github:  <br><br>
+        <a href="https://openframeworks.cc/ofBook/chapters/version_control_with_git.html" target="_blank">ofBook</a><br>
+        <a href="https://medium.freecodecamp.org/what-is-git-and-how-to-use-it-c341b049ae61" target="_blank">freecodecamp</a><br>
+        <a href="https://forum.openframeworks.cc/t/using-github-and-cloning-add-ons/32429" target="_blank">Cloning Addons</a><br><br>
+
+Have a Leap Motion and want to play? Download the binary <a href="downloads/GS/Lovecats.zip">here</a>. </p1></div>
+	 
+	 
+	 </div>
+	 <div class="col-1 col-xl-2"></div>
+	 </div>
+	 
+		 
+		 <br>
+		 
+	 
+   <div class="container mt-5 col-sm-10 col-md-8">
+				 <center><workpageh1>Vector Illustrations</workpageh1></center><br>
+		<div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="3000">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="images/Portfolio/Lovecats/Lovecats_Carousel/1.jpg" alt="Second slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="images/Portfolio/Lovecats/Lovecats_Carousel/2.jpg" alt="Third slide">
+    </div>
+	      <div class="carousel-item">
+      <img class="d-block w-100" src="images/Portfolio/Lovecats/Lovecats_Carousel/3.jpg" alt="Fourth slide">
+    </div>
+	        <div class="carousel-item">
+      <img class="d-block w-100" src="images/Portfolio/Lovecats/Lovecats_Carousel/4.jpg" alt="Fourth slide">
+    </div>
+	      <div class="carousel-item">
+      <img class="d-block w-100" src="images/Portfolio/Lovecats/Lovecats_Carousel/5.jpg" alt="Fifth slide">
+    </div>
+	        <div class="carousel-item">
+      <img class="d-block w-100" src="images/Portfolio/Lovecats/Lovecats_Carousel/6.jpg" alt="Fourth slide">
+    </div>
+	      <div class="carousel-item">
+      <img class="d-block w-100" src="images/Portfolio/Lovecats/Lovecats_Carousel/7.jpg" alt="Fifth slide">
+    </div>
+	         <div class="carousel-item">
+      <img class="d-block w-100" src="images/Portfolio/Lovecats/Lovecats_Carousel/8.jpg" alt="Fourth slide">
+    </div>
+	      <div class="carousel-item">
+      <img class="d-block w-100" src="images/Portfolio/Lovecats/Lovecats_Carousel/9.jpg" alt="Fifth slide">
+    </div>
+	        <div class="carousel-item">
+      <img class="d-block w-100" src="images/Portfolio/Lovecats/Lovecats_Carousel/10.jpg" alt="Fifth slide">
+    </div>
+	         <div class="carousel-item">
+      <img class="d-block w-100" src="images/Portfolio/Lovecats/Lovecats_Carousel/11.jpg" alt="Fourth slide">
+    </div>
+
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+	</div>
+
+
+
+	 <!-- div 3 Bottom Margin -->
+<div class="row" style="height: 50px;">
+<div class="col-12"></div>
+</div>
+	 
+	 
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+	
+  <script src="scripts/image-swap.js"></script>
+	
+</body>
+</html>
+	 

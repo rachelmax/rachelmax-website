@@ -1,0 +1,223 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Rachel Max is a designer, art director, and creative coder">
+    <meta name="keywords" content="Rachel Max, London, Hamburg, San Francisco, NYC, digital product design, designer, interaction design, UI and UX design, motion design, physical computing, code-based work, interactive, new media, immersive, emerging technology">
+    <meta name="author" content="Rachel Max">
+  <meta property="og:image" content="images/R_Circle.jpg" width="200"/>
+    <link rel="shortcut icon" href="ico/Rachel.ico">
+
+
+<title>Some Belong</title>
+
+	
+	  <link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/site_style.css" rel="stylesheet">
+	<link href="css/portfolio_style.css" rel="stylesheet">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+
+</head>
+
+
+<body>
+
+<!-- NAV     -->    
+        
+    <div id="nav-placeholder">
+    </div>
+    
+<script>
+    $.get("navigation.html", function(data){
+        $("#nav-placeholder").replaceWith(data);
+    });
+</script> 
+
+<!--end nav --> 
+	
+	
+		 <!-- Margin Div -->
+		   <div class="row" style="height: 20px;">
+            <div class="col-12"></div>
+        </div><!-- end of Margin Div -->
+ 
+	
+	<!-- Begin page content -->
+	
+
+ <div class="row mt-3">
+    <div class="col-1 col-xl-2"></div>
+ <div class="col">
+
+<center><workpageh1>Some Belong</workpageh1></center>
+	 <br>
+ <p1>Inspired in part by the designs of <a href="https://www.marimekko.com/gb_en/fabrics" target="_blank">Marimekko</a>, this generative Processing sketch is a visualization  of dataset of a regional loneliness in Northern England.</p1>
+	  <br><br>
+	 
+    <div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/317126899" allowfullscreen></iframe>
+</div>
+	<p1> Music is LA Trance by Four Tet from their album New Energy.</p1>
+	 
+	<br><br> 
+	 <div class="container mt-5">
+<center><workpageh1>Concept & Aesthetic</workpageh1></center>
+	 <br>
+<p1>
+For the past few years I have been interested in the increasing epidemic of perceived loneliness in the UK and US. According to a recent study from the British Red Cross, over nine million adults in the UK feel lonely which is almost 1/5th of the country’s population. Loneliness is considered to be as hazardous to human health as smoking 15 cigarettes a day. 
+<br><br>
+I obtained <a href="https://data.gov.uk/dataset/0c6b32b4-2261-4820-9baf-843ae58f4ef4/loneliness-within-lsoa" target="_blank">data from a study conducted by the Wigan Metropolitan Borough Council</a> which examines loneliness in small communities around the area. The piece represents the populations and percentage of marginalized people from four communities. I wanted to convey the information in a way which would engage a viewer to interpret the visualized data as a story and to hopefully encourage contemplation. <br><br>
+My goal is that this work encourages discussion about why we are we lonely and the possible contributing factors to the breakdown of community and sense of belonging. Perhaps by becoming aware of this stigmatized issue, we can attempt to address this epidemic. 
+<br><br>
+The aesthetic of this project is inspired by the fabric designs of Finnish textile design house Marimekko. These fabrics feature repeated patterns and are strongly organic with imperfect circles, hand-drawn lines, and use a mixture of both subtle and contrasting colors.</p1></div>
+
+	
+	<div class="container mt-5">
+	 	 <center>
+			 <workpageh1>Click to enlarge</workpageh1><br>
+			 <figure class="figure mx-auto mt-3"> <a href="images/Portfolio/SomeBelong/RMAX_Final_PFA_HD.jpg" target="_blank"><img src="images/Portfolio/SomeBelong/RMAX_Final_PFA_HD.jpg" class="figure-img img-fluid" alt="Responsive Figure"></a>				
+           </figure> 
+	  </center>
+	  </div>
+	 
+	 
+	 
+ <div class="container mt-5">
+<center><workpageh1>Process</workpageh1></center>
+	<br>
+	 
+<p1>
+After I narrowed down my visual goal and obtained the data, I began experimenting - trying to make loops of ellipses which felt organic. I added noise to the position of each of the looped shapes - on the X, Y, rotation, and size - eventually achieving an acceptable result. I used transform to create four separate sections and rotate each section so the loop arcs would emanate from the center.
+<br><br>
+Once I established the form of the loop, I began working on the shapes inside the loop. The organic design called for irregular circles and it seemed that using my own weird circle PShape would be best. This worked at first but then I realized the output to PDF resulted in strange triangular renders and generally unsatisfactory fidelity. After some research and failed attempts, I opted to use SVGs that I designed in Illustrator. Using SVGs also meant that when I scaled up the output PDF, the circles would scale accordingly.
+<br><br>
+The tabular data was imported and used in each section to determine the size of the arcs and the rotation of each circle. The arc shapes represent community - a cohesion - even if looking slightly disordered which reproduces the organized chaos of nature. The four arc sections are separate but also work in unison to present the idea of a system. The different sizes of these sections create a tension suggestive of movement. 
+<br><br>
+The blue circles outside the arcs resent people with a greater sense of perceived loneliness in that community. The color of these lonely circles gets darker the closer they are to the collective. The bluer the circle, the greater the sense of loneliness. The circular structure of the system suggests the lonely blue circles are literally “out of the loop”. 
+<br><br>
+The sketch results in slightly different visuals each time it is run.
+	 </p1></div>
+
+	 
+ <div class="container mt-5">
+<center><workpageh1>Self Evaluation</workpageh1></center>
+	 <br>
+<p1>
+While there is room for improvement, I am quite pleased with this project. I feel that I pushed myself technically and aesthetically. I have been thinking about making organic or hand-drawn work for quite some time but didn’t know how to approach it. Exporting the sketch was a bit challenging but I love that I have some tangible to hang on a wall.
+</p1></div>
+	 
+	 
+ <div class="container mt-5">
+<center><workpageh1>References</workpageh1></center>
+	 <br>
+<p1>
+My final project includes code written by Daniel Shiffman and Casey Reas from their tutorials and examples:<br><br>
+
+<a href="https://processing.org/reference/loadShape_.html" target="_blank">loadShape</a><br>
+<a href="https://processing.org/reference/Array.html" target="_blank">Array</a><br>
+<a href="https://processing.org/reference/noise_.html" target="_blank">Noise</a><br>
+<a href="https://processing.org/reference/noiseSeed_.html" target="_blank">noiseSeed</a><br>
+<a href="https://processing.org/reference/libraries/pdf/index.html" target="_blank">pdf</a><br><br>
+
+I also researched several topics for further explanation and for help troubleshooting issues:<br><br>
+
+Problems using <a href="https://github.com/processing/processing/issues/5173" target="_blank">curveVertex with PDF</a><br>
+<a href="https://www.youtube.com/watch?v=DPFJROWdkQ8&vl=en" target="_blank">Array of Images</a><br>
+<a href="https://vimeo.com/showcase/2573675" target="_blank">Data Viz in Processing</a><br>
+<a href="https://www.youtube.com/watch?v=woaR-CJEwqc" target="_blank">Using Tabular Data in Processing</a><br><br>
+
+Data Reference Links:<br>
+<a href="https://data.gov.uk/search?q=loneliness" target="_blank">Loneliness datasets</a><br>
+<a href="http://sitn.hms.harvard.edu/flash/2018/loneliness-an-epidemic/" target="_blank">Epidemic of loneliness</a><br>
+<a href="https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.1000316" target="_blank">Health effects of loneliness</a></p1></div>
+	 
+	 
+	
+ </div>
+	 <div class="col-1 col-xl-2"></div>
+	 </div>
+	 
+	 
+   <div class="container mt-5 col-10 col-xl-8">
+				 <center><workpageh1>Process Shots</workpageh1></center><br>
+		<div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="3000">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="images/Portfolio/SomeBelong/SB_Carousel/SB_Carousel_1.jpg" alt="Second slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="images/Portfolio/SomeBelong/SB_Carousel/SB_Carousel_2.jpg" alt="Third slide">
+    </div>
+	      <div class="carousel-item">
+      <img class="d-block w-100" src="images/Portfolio/SomeBelong/SB_Carousel/SB_Carousel_3.jpg" alt="Fourth slide">
+    </div>
+	        <div class="carousel-item">
+      <img class="d-block w-100" src="images/Portfolio/SomeBelong/SB_Carousel/SB_Carousel_4.jpg" alt="Fourth slide">
+    </div>
+	      <div class="carousel-item">
+      <img class="d-block w-100" src="images/Portfolio/SomeBelong/SB_Carousel/SB_Carousel_5.jpg" alt="Fifth slide">
+    </div>
+	        <div class="carousel-item">
+      <img class="d-block w-100" src="images/Portfolio/SomeBelong/SB_Carousel/SB_Carousel_6.jpg" alt="Fourth slide">
+    </div>
+	      <div class="carousel-item">
+      <img class="d-block w-100" src="images/Portfolio/SomeBelong/SB_Carousel/SB_Carousel_7.jpg" alt="Fifth slide">
+    </div>
+	         <div class="carousel-item">
+      <img class="d-block w-100" src="images/Portfolio/SomeBelong/SB_Carousel/SB_Carousel_8.jpg" alt="Fourth slide">
+    </div>
+	      <div class="carousel-item">
+      <img class="d-block w-100" src="images/Portfolio/SomeBelong/SB_Carousel/SB_Carousel_9.jpg" alt="Fifth slide">
+    </div>
+	   <div class="carousel-item">
+      <img class="d-block w-100" src="images/Portfolio/SomeBelong/SB_Carousel/SB_Carousel_10.jpg" alt="Fifth slide">
+    </div>
+	         <div class="carousel-item">
+      <img class="d-block w-100" src="images/Portfolio/SomeBelong/SB_Carousel/SB_Carousel_11.jpg" alt="Fourth slide">
+    </div>
+	      <div class="carousel-item">
+      <img class="d-block w-100" src="images/Portfolio/SomeBelong/SB_Carousel/SB_Carousel_12.jpg" alt="Fifth slide">
+    </div>
+	  
+	    <div class="carousel-item">
+      <img class="d-block w-100" src="images/Portfolio/SomeBelong/SB_Carousel/SB_Carousel_13.jpg" alt="Fourth slide">
+    </div>
+	     
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+	</div>
+
+
+	 
+  
+
+	 
+	
+	 <!-- div 3 Bottom Margin -->
+<div class="row" style="height: 50px;">
+<div class="col-12"></div>
+</div>
+	 
+	 
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+	
+  <script src="scripts/image-swap.js"></script>
+	
+</body>
+</html>
+	 

@@ -1,0 +1,460 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Rachel Max is a designer, art director, and creative coder">
+    <meta name="keywords" content="Rachel Max, London, Hamburg, San Francisco, NYC, digital product design, designer, interaction design, UI and UX design, motion design, physical computing, code-based work, interactive, new media, immersive, emerging technology">
+    <meta name="author" content="Rachel Max">
+  <meta property="og:image" content="images/R_Circle.jpg" width="200"/>
+    <link rel="shortcut icon" href="ico/Rachel.ico">
+
+
+<title>Other Lamp</title>
+
+	
+	  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/site_style.css" rel="stylesheet">
+  <link href="css/portfolio_style.css" rel="stylesheet">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+
+</head>
+
+
+<body>
+
+<!-- NAV     -->    
+        
+    <div id="nav-placeholder">
+    </div>
+    
+<script>
+    $.get("navigation.html", function(data){
+        $("#nav-placeholder").replaceWith(data);
+    });
+</script> 
+
+<!--end nav --> 
+
+	
+		 <!-- Margin Div -->
+		   <div class="row" style="height: 20px;">
+            <div class="col-12"></div>
+        </div><!-- end of Margin Div -->
+ 
+	
+	<!-- Begin page content -->
+	
+
+ <div class="row mt-3">
+    <div class="col-1 col-xl-2"></div>
+ <div class="col">
+
+<center><workpageh1>Other Lamp</workpageh1></center>
+	 <br>
+ <p1><em>Other Lamp</em> imagines a world where there are no simple on/off switches. What if one had to spend time with an object to learn how to operate it? The habitat for these lamps is one of friction where nothing works as expected. In this imagined world, every technological interaction takes patience and problem solving.</p1>
+	  <br><br>
+	 
+    <div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/360375047" allowfullscreen></iframe>
+</div>
+
+	 
+	<br><br> 
+<center><workpageh1>Overview and Concept</workpageh1></center>
+	 <br>
+<p1>
+In <em>Other Lamp</em>, four minimalist and colorful lamps are presented in a bright and light teal setting on a similarly colored shelf. The setting conjures associations with curated trendy home design shops such as Urban Outfitters. A poster serves as a helpful color-coded guide for use. The genderless IKEA-like humanoid demonstrates that the <em>Marine Blue Other Lamp</em> is activated by lifting, the <em>Lilac Other Lamp</em> is activated by waving your hand over the sensor, the <em>Pink Other Lamp</em> is activated by yelling at it, and the <em>White Other Lamp</em> is activated by touching the conductive pads. These interactions are complicated though and the correct action needs to be performed several times in order to turn each lamp on or off.
+</p1>
+ 
+
+	 	 <center><figure class="figure mx-auto mt-5">	
+<img src="images/Portfolio/OtherLamp/OtherLamp_Poster.jpg" class="figure-img img-fluid" alt="Responsive Figure">				
+</figure> </center>
+
+	 
+<p1>
+<em>Other Lamp</em> is my final project for my <a href="https://www.gold.ac.uk/pg/ma-computational-arts/" target="_blank">MA in Computational Art from Goldsmiths University of London</a> and is an expanded version of my term one final project completed for Physical Computing with instructor Evan Raskob and Teaching Assistant Matt Jarvis. That project was called <a href="Work_TransactionalLamps.html"><em>Transactional Lamps</em></a> and featured two lamps made out of cardboard. One lamp was activated by waving a hand over an Ultrasonic Distance Sensor and one lamp was activated by yelling loudly and used a microphone as the input sensor. 
+	<br><br>
+The benefit of the Summer Session, other than independent working time to explore new technologies and methodologies, is that one can revisit a project and expand upon it, creating a cogent and cohesive piece for installation. I felt that the lamp project was one of the strongest pieces I made during the programme because it encapsulated themes I am currently interested in, such as transaction and reconfigurations of human relationships with technology. The lamps communicate these themes in a humorous way, allowing the participant to discover the work and reflect on how easy it is to engage with technology and how it discomforting and frustrating it is when transaction is added to a basic and familiar interaction.
+	 <br><br>
+In <em>Other Lamp</em>, I was able to expand the <em>Transactional Lamps</em> project to include four lamps in a more polished presentation. The final lamps are made from wood and acrylic using iterative rapid prototyping and each features 26 individually addressable Neopixels instead of the 5 I used in December of 2018. The poster, the setting, and the lamps themselves are lighthearted but the underlying themes are quite serious, the main one being that if most daily interactions are with non-transactional technology, then how does that effect human to human relationships? In this world of instant gratification, as Sherry Turkle writes in her 2017 book Alone Together, we are expecting less of each other and more from technology. Turkle posits that technology is training us to be alone and that we are becoming increasingly isolated. She explains that human relationships are complicated and transactional while for the the most part, our technological relationships require little less than pressing a button. We are immediately entertained, distracted, made to feel needed, and made to feel important by technology that has been purposefully designed to be addictive.
+</p1>
+
+	 	<br><br> 
+<center><workpageh1>Technical & Code</workpageh1></center>
+
+	 <p1>
+The code for each of these lamps is relatively straightforward. The completely of the project rests on the series as a whole and the separate but related interactions they require.
+	<br><br> 
+The LEDs are initialized in each Arduino file with a color wipe animation which matches the color of the lamp. I researched several RGB values to find the matching color for each lamp. I felt that having the LEDs match the lamp color would complement both the design and interaction.
+</p1>
+	  <br><br>
+	 
+	 	 	 <center>
+	 	 	   <figure class="figure mx-auto mt-2">	
+<img src="images/Portfolio/OtherLamp/colorMatch.jpg" class="figure-img img-fluid" alt="Responsive Figure">	
+	  <br><br>
+<img src="images/Portfolio/OtherLamp/start_up.gif" class="figure-img img-fluid" alt="Responsive Figure">	
+</figure> 
+	 	 	   </center>
+	 
+ <p1>	 
+	 All the files have a timer which shuts off the lamps within ten minutes if they are left on and each file uses a button counter to log when the correct interaction has been detected and to turn on the light after the button counter reaches a certain number. All the lamps have a hidden LED used for debugging which communicates input received.
+	  <br><br>
+I wanted each lamp to be powered via a plug to avoid having to charge and change batteries over the course of the four day exhibition. Using a cord also made the lamps appear to be more familiar or normal. To do this I used switching multi-voltage adapters were I could change to outgoing voltage to match the demands of the microcontrollers. The Adafruit Metro Boards used in the Wave and Lift lamps take 9 volts, the Adafruit Flora and Bare Conductive Touch Board used in the Yell and Touch Lamp each take 5 volts. I initially considered adding an on/off switch in the base of each lamp but decided against this as I wanted the participants to have less control.
+</p1>	 
+	 
+	
+	 
+	 
+	  <div class="container mt-5">
+				 <center><workpageh1>Circuit Diagrams, Adpater, and Cord</workpageh1></center><br>
+<div id="carousel4Fade" class="carousel slide carousel-fade" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="images/Portfolio/OtherLamp/Circuit Diagrams/WAVEandLIFT_sm.jpg" alt="One">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="images/Portfolio/OtherLamp/Circuit Diagrams/YELL_sm.jpg" alt="Two">
+    </div>
+	      <div class="carousel-item">
+      <img class="d-block w-100" src="images/Portfolio/OtherLamp/Circuit Diagrams/TOUCH_sm.jpg" alt="Threeeee">
+    </div>
+	        <div class="carousel-item">
+      <img class="d-block w-100" src="images/Portfolio/OtherLamp/Circuit Diagrams/PowerAdapter.jpg" alt="Four">
+    </div>
+	  	        <div class="carousel-item">
+      <img class="d-block w-100" src="images/Portfolio/OtherLamp/Circuit Diagrams/Cord.jpg" alt="Five">
+    </div>
+</div>
+  <a class="carousel-control-prev" href="#carousel4Fade" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carousel4Fade" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+</div>	 
+
+
+		  
+ <div class="container mt-5">
+	 
+				 <center><workpageh1>Code Snippets</workpageh1></center><br>
+		<div id="carousel6Fade" class="carousel slide carousel-fade" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="images/Portfolio/OtherLamp/Code Snippets/1.Code_Snippet_LIFT.jpg" alt="1">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="images/Portfolio/OtherLamp/Code Snippets/2.Code_Snippet_WAVE.jpg" alt="2">
+    </div>
+	      <div class="carousel-item">
+      <img class="d-block w-100" src="images/Portfolio/OtherLamp/Code Snippets/3.Code_Snippet_YELL.jpg" alt="3">
+    </div>
+	        <div class="carousel-item">
+      <img class="d-block w-100" src="images/Portfolio/OtherLamp/Code Snippets/4.Code_Snippet_TOUCH.jpg" alt="4">
+    </div>
+</div>
+		<a class="carousel-control-prev" href="#carousel6Fade" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carousel6Fade" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>	
+			</a>			
+	</div>
+ </div>
+		  
+
+	 
+	 
+	  <div class="mt-5">
+<center><workpageh1>Design</workpageh1></center>
+	 <br>
+<p1>
+The goal was to create lamps which at first glance would look like products currently on the market and that would be attractive items to place in a home setting. The complicated behavior would be discovered later which would hopefully provide a reflection on how we use technology and what the effects of instant gratification might be. If the lamps looked odd, the design would have been distracting to the concept.
+<br><br>
+Initial ideas were done in Cinema 4D and these renders were used in discussions with colleagues well versed in rapid prototyping. The 4th lamp with a nice balance of square neck and round base seemed like the most straightforward to build. Fusion 360 was then used in order to produce precise measurements and a tight fit wherever holes and intersections were used. Slicer for Fusion 360 enabled the base to be cut into appropriate sections for the MDF construction. These slices were glued together and sanded along with the top and bottom of the base to create a unified shape with smooth edges.
+<br><br>
+The design of the lamp was refined through iteration and testing - moving the arm from the center towards the back for better balance, designing small features to aid in construction and durability such as the square holes at the bottom of the arms which enabled stronger bonds with the base, and generally making the lamp smaller. I made sure to get a snug fit on each of the exposed sensors. After some trail and error I used strong double-sided artist tape to adhere the laser cut pieces and chose <a href="https://shop.molotow.com/en/dosen.html" target="_blank">Molotow spray paint</a> to get an even finish on the wood. </p1>
+	<br><br>
+    </div> 
+	 
+	 <div class="mt-5">
+<div id="carousel1Fade" class="carousel slide carousel-fade" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="images/Portfolio/OtherLamp/Lamp_initial_Design_1.jpg" alt="one1">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="images/Portfolio/OtherLamp/Lamp_initial_Design_2.jpg" alt="two2">
+    </div>
+	      <div class="carousel-item">
+      <img class="d-block w-100" src="images/Portfolio/OtherLamp/Lamp_initial_Design_3.jpg" alt="three3">
+    </div>
+	        <div class="carousel-item">
+      <img class="d-block w-100" src="images/Portfolio/OtherLamp/Lamp_initial_Design_4.jpg" alt="four4">
+    </div>
+	    <div class="carousel-item">
+      <img class="d-block w-100" src="images/Portfolio/OtherLamp/Lamp_initial_Design_5.jpg" alt="five5">
+    </div>
+	    <div class="carousel-item">
+      <img class="d-block w-100" src="images/Portfolio/OtherLamp/Lamp_initial_Design_6.jpg" alt="six6">
+    </div>
+	    <div class="carousel-item">
+      <img class="d-block w-100" src="images/Portfolio/OtherLamp/Lamp_initial_Design_7.jpg" alt="seven7">
+    </div>
+	  	    <div class="carousel-item">
+      <img class="d-block w-100" src="images/Portfolio/OtherLamp/Lamp_initial_Design_8.jpg" alt="seven7">
+    </div>
+	    <div class="carousel-item">
+      <img class="d-block w-100" src="images/Portfolio/OtherLamp/Lamp_initial_Design_19.jpg" alt="eight8">
+    </div>
+	    <div class="carousel-item">
+      <img class="d-block w-100" src="images/Portfolio/OtherLamp/Lamp_initial_Design_20.jpg" alt="nine9">
+    </div>
+</div>
+	<a class="carousel-control-prev" href="#carousel1Fade" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carousel1Fade" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>	
+			</a>			
+	</div>
+ </div>
+	 
+	
+	  <div class="mt-5">
+	 <p1>
+Using a smaller base than the initial prototype meant finding compact microcontrollers for a better fit. The <a href="https://www.adafruit.com/product/2466" target="_blank">Adafruit Metro</a> comes in a headerless version and was used in the Wave and Lift Lamps with direct soldering to the board. The other lamps had fewer parts so the fit was not a concern. <br><br>
+Two types of perspex were used in the lamp - a white opal perspex on the arm which allowed light to penetrate but hid the LED strip and a more diffuse and transparent perspex for the top the light which glowed when the LEDs were lit. The LED strip can be seen through this diffuse perspex but as it is underneath the top part of the light, this was not a concern.
+<br><br>
+The lamps were finished by screwing on a base which had a hole cut out for better airflow. Rubber feet were added for better grip and to avoid scraping the shelf. Each lamp held up well over the course of the four day exhibit.
+</p1>
+	  </div> 
+	 	
+	   <div class="mt-5">
+<div id="carousel2Fade" class="carousel slide carousel-fade" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="images/Portfolio/OtherLamp/Lamp_initial_Design_9.jpg" alt="oneone">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="images/Portfolio/OtherLamp/Lamp_initial_Design_10.jpg" alt="twotwo">
+    </div>
+	      <div class="carousel-item">
+      <img class="d-block w-100" src="images/Portfolio/OtherLamp/Lamp_initial_Design_11.jpg" alt="threethree">
+    </div>
+	        <div class="carousel-item">
+      <img class="d-block w-100" src="images/Portfolio/OtherLamp/Lamp_initial_Design_12.jpg" alt="fourfour">
+    </div>
+	    <div class="carousel-item">
+      <img class="d-block w-100" src="images/Portfolio/OtherLamp/Lamp_initial_Design_13.jpg" alt="fivefive">
+    </div>
+	    <div class="carousel-item">
+      <img class="d-block w-100" src="images/Portfolio/OtherLamp/Lamp_initial_Design_14.jpg" alt="sixsix">
+    </div>
+	    <img class="d-block w-100" src="images/Portfolio/OtherLamp/Lamp_initial_Design_15.jpg" alt="sevemseven">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="images/Portfolio/OtherLamp/Lamp_initial_Design_16.jpg" alt="eighteight">
+    </div>
+	      <div class="carousel-item">
+      <img class="d-block w-100" src="images/Portfolio/OtherLamp/Lamp_initial_Design_17.jpg" alt="ninenine">
+    </div>
+	        <div class="carousel-item">
+      <img class="d-block w-100" src="images/Portfolio/OtherLamp/Lamp_initial_Design_18.jpg" alt="tenten">
+    </div>
+ <a class="carousel-control-prev" href="#carousel2Fade" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carousel2Fade" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>	
+			</a>			
+	</div>
+ </div>
+
+	  <div class="mt-5"> 
+<div id="carousel3Fade" class="carousel slide carousel-fade" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="images/Portfolio/OtherLamp/Glow_Top_1.jpg" alt="five5">
+    </div>
+	    <div class="carousel-item">
+      <img class="d-block w-100" src="images/Portfolio/OtherLamp/Glow_Top_2.jpg" alt="six6">
+    </div>
+	    <div class="carousel-item">
+      <img class="d-block w-100" src="images/Portfolio/OtherLamp/Glow_Top_3.jpg" alt="seven7">
+    </div>
+</div>
+	</div> 
+    </div> 
+
+  <div class="mt-5"> 
+<center><workpageh1>Inspiration and Contextual Placement</workpageh1></center>
+	 <br>
+<p1>
+I am drawn to work that is ironic, humorous, and self-aware and work which holds an intermediate position between critical design and fine art. 
+<br><br>
+The early work of Kelly Dobson, currently the <a href="https://www.linkedin.com/in/kelly-dobson-ba091123/" target="_blank">Department Head of Digital and Media at Rhode Island School of Design</a>, has been the most influential to me. In her series Machine Therapy, Dobson explores the co-evolution of people and machines as companion species. The machines have expressive engaging behaviors, strength of character, and neurotic propensities (Dobson). <br><br>
+<em><a href="https://www.youtube.com/watch?v=YiG49OPq0qY&t=16s" target="_blank">Omo</a></em> is an egg-shaped machine with a soft rubber exterior that matches its breathing to a participant’s, eventually synchronizing man and machine to a point where they can feed off each other. Dobson draws attention to how easily conditioning by machine occurs and writes “it is interesting and important to think how our machines socialize us, teach us about ourselves and participate in our formations of our own places in the world”.</p1>
+</div> 
+	
+<center>
+<figure class="mt-2 mx-auto d-block">
+<img src="images/Portfolio/OtherLamp/Inspiration/Omo_2.png"  class="figure-img img-fluid" alt="cry">
+<figcaption class="figure-caption">Dobson, Kelly. “OMO" YouTube, uploaded by oceanoperdido, 21 Spetember, 2010, https://www.youtube.com/watch?v=YiG49OPq0qY</figcaption>
+</figure></center>	
+
+	 
+	 <div class="mt-5">   
+	   <p1>
+<a href="https://www.youtube.com/watch?v=6DDkwdPaYmk" target="_blank"><em>Blendie</em></a> is a voice controlled blender. To make it work, one must imitate the sounds of the motor, low guttural sounds for a soft blend and high shrill sounds for fast blending. The users must speak the language of the machine and connect with it on a more personal level.</p1>
+</div> 
+		  <center>
+		  <figure class="mt-2 mx-auto d-block">
+<img src="images/Portfolio/OtherLamp/Inspiration/blendie_kelly_medres.jpg"  class="figure-img img-fluid" alt="cry">
+<figcaption class="figure-caption">Dobson, Kelly. “Blendie: a voice controlled blender." YouTube, uploaded by akiin, 1 March, 2006, https://www.youtube.com/watch?v=6DDkwdPaYmks</figcaption>
+</figure></center>
+	 
+ <div class="mt-5"> 
+	<p1>
+The final project in the Machine Therapy series is <a href="https://www.youtube.com/watch?v=Ta7rN5TeKzw" target="_blank"><em>ScreamBody</em></a>, a portable space for screaming where users can vocalize their emotions. One carries the ScreamBody on the person and when the need to scream arises, the soundproof ScreamBody is lifted to the mouth and stores the scream for release later.</p1>
+</div> 
+	
+	<center>
+	<figure class="mt-2 mx-auto d-block">
+<img src="images/Portfolio/OtherLamp/Inspiration/screambodyimagesmall.jpg"  class="figure-img img-fluid" alt="cry">
+<figcaption class="figure-caption">Dobson, Kelly. “Screambody.” MIT Media Lab, 2004, http://web.media.mit.edu/~monster/screambody/</figcaption>
+</figure></center>	
+
+	 
+	  <div class="mt-5"> 
+	<p1>
+<em>Other Lamp</em> is related to each project in this series. The lamps condition participants to use them in specific ways and are socializing subconsciously. Participants are learning the language of the devices and are performing in an uncomfortable space where they are lifting a lamp repeatedly or waving exhaustively over the base of a lamp. <em>Other Lamp</em> is related to ScreamBody as they both employ screaming or yelling as a function of a device. As Dobson touches on in her description of ScreamBody, it is not permitted to yell in Western society except on a rollercoaster or at a sporting event. Yelling outside of this context communicates a disturbed person or a traumatic event. Yelling is taboo, yet <em>Pink Other Lamp</em> demands it to function. 
+<br><br>
+During the four day final Computational Arts exhibition, several participants were embarrassed to draw attention to themselves when yelling at <em>Pink Other Lamp</em>; however, yelling was exciting and something conditional in order to get an object to light up as opposed to emotional or personal. <em>Pink Other Lamp</em> provides an excuse to yell, which is part of the fun of the project.
+		<br><br>
+Another influence on O<em>ther Lamp</em> is the work of <a href="https://www.artsy.net/artist/cary-leibowitz-candy-ass" target="_blank">Cary Leibowitz</a>. Leibowitz’s unmistakable work as described on the San Francisco Jewish Contemporary Museum website “is the product of a riveting and consistent practice—driven by anxieties, neuroses, and premonitions of difference that transform self-doubt and social skepticism into something much larger than niche art-world critique: a heartrending and intimate meditation on our inescapable secret doubleness, the lacerating, manipulative and above all debilitating self-aware conscience that lies always beneath, or behind, or just around the corner, with a mocking wink.” <br><br>
+Leibowitz works within an art world he is skeptical of just as I work in user experience design and product design and am equally skeptical of these worlds. Can good design and good UI be quantified? To love anything is to question it and Leibowitz goes a step further and acknowledges his self-doubt and self awareness as an art practitioner in a humorous way. It is this humor above all that endears the spectator to Leibowitz and creates a camaraderie.
+	<br><br>
+	<em>Other Lamp</em> is about device interaction and it is about human interaction. How does one navigate transaction in any form? When are we being manipulated and when are we simply co-existing? Should we be aware of what is gained or sacrificed through a relationship?
+	
+	</p1>
+</div> 
+	 
+	 
+	<center>
+<figure class="mt-5 mx-auto d-block">
+<img src="images/Portfolio/OtherLamp/Inspiration/sadsadsad.jpg"  class="figure-img img-fluid" alt="cry">
+</figure></center>	
+	
+	<center>
+	<figure class="mt-1 mx-auto d-block">
+<img src="images/Portfolio/OtherLamp/Inspiration/jewishpants.jpg"  class="figure-img img-fluid" alt="cry">
+<figcaption class="figure-caption">Photos of the Cary Leibowitz: Museum Show at the San Francisco Jewish Contemporary Museum which ran from Jan 26, 2017–Jun 25, 2017. https://www.thecjm.org/exhibitions/12</figcaption>
+</figure></center>	
+	
+	 <div class="mt-5"> 
+	 <p1>
+	 Lastly, <em>Other Lamp</em> relates to the work of <a href="https://nadinelessio.com" target="_blank">Nadine Lessio</a>, a researcher, artist, and creative technologist based out of Toronto, Canada. Lessio has several speculative works imagining Alexa with agency. Lessio’s work is appealing because she hacks the Alexa, making her ideas fully interactive and experiential. In this way her work is going beyond critical and speculative design because the work exists in the present and are not merely conceptual. <a href="https://vimeo.com/317906749" target="_blank">Her work is humorous</a> yet speaks to issues such as the distribution of labor and like <em>Other Lamp</em>, addresses transaction in human and non-human relationships. <br><br>
+<em>Other Lamp</em> might appear to fit into a Critical or Speculative genre in the way that it examines sociotechnical trends and developing scenarios of product roles in new use contexts but <em>Other Lamp</em> is also a working product. The work resides in the here and now not in a “not too distant” future. <em>Other Lamp</em> can be experienced, evaluated, and enjoyed today!
+	
+	</p1>  </div> 
+	
+	 <div class="mt-5"> 
+<center><workpageh1>Future development</workpageh1></center>
+	<br>
+<p1> 
+I would love to continue to work on an expanded series of these lamps and to continue to refine their design and code. Adding a dimming interaction might be interesting. For example, instead of having to lift the Marine Blue Other Lamp up three times before the lights come on, maybe the LEDs begin to light up as one raises the lamp. This could be the same with each lamp.
+</p1> </div> 
+
+		 <div class="mt-5">  
+<center><workpageh1>Self evaluation</workpageh1></center>	
+	<p1> 
+<br>
+I pushed myself in taking on this project and learned Fusion 360, best practices when laser cutting, more about rapid prototyping, became familiar with the wood shop, and even a bit of carpentry. I wrote all my own code and although it might not be complex, it worked as designed and I felt that writing the code was important part of a final project on this course.  
+<br><br>
+I paid attention to detail both in the design of the lamps and the space I was given. I did rounds of color matching to make sure the colors in the poster matched the teal wall and the lamps.
+<br><br>
+In retrospect, three lamps may have been enough. I did not leave enough time to troubleshoot errors, forgetting that a circuit may work well when prototyped but can behave differently when placed into a final project. This happened with the White Other Lamp which involves touching conductive pads. The Neopixels did not light up a desired, reaching only 50% of their intended brightness and once lit, the interaction ceased. I spent a day troubleshooting this issue but had to move forward with the installation with a half working version. If I could rebuild this lamp, I would also use conductive fabric instead of conductive paint.
+ </p1> 
+    </div> 
+
+	 <div class="mt-5">   
+<center><workpageh1>References</workpageh1></center>
+	 <br>
+<p1>
+Dobson, Kelly. “Biography”. MIT Media Lab. http://web.media.mit.edu/~monster/ Accessed 13 January 2018. 
+<br><br> 
+Turkle, Sherry. Alone Together: Why We Expect More from Technology and Less from Each Other. Basic Books, 2017. </p1> </div> 
+	
+ <div class="mt-5"> 
+	 <center><workpageh1>Links</workpageh1></center>
+	 <br>
+<p1>
+<a href="http://otherlamp.co.uk" target="_blank">otherlamp.co.uk</a>
+	<br><br> 
+    <a href="http://rachelmax.com/Downloads/GS/OtherLamp_Code.zip" target="_blank">Download my Code</a></p1>
+	</div> 
+	 
+	 
+ <div class="mt-5"> 
+	<center><workpageh1>Tutorials</workpageh1></center>
+	 <br>
+<p1>
+<a href="https://www.arduino.cc/en/Tutorial/StateChangeDetection?from=Tutorial.ButtonStateChange" target="_blank">Tom Igoe's State change detection sketch</a><br><br> 
+<a href="https://howtomechatronics.com/tutorials/arduino/ultrasonic-sensor-hc-sr04/" target="_blank">Dejan Nedelkovski's Ultrasonic Sensor HC-SR04 and Arduino Tutorial</a><br><br> 
+<a href="https://learn.adafruit.com/adafruit-neopixel-uberguide" target="_blank">Adafruit NeoPixel Überguide</a><br><br> 
+<a href="https://learn.adafruit.com/getting-started-with-flora" target="_blank">Adafruit Flora Guide</a><br><br> 
+<a href="https://learn.adafruit.com/experimenters-guide-for-metro" target="_blank">Experimenters Guide for Metro</a></p1>
+ 	</div> 
+	 
+ <div class="mt-5"> 
+<center><workpageh1>Thanks</workpageh1></center>
+	 <br>
+<p1>
+Thanks to lecturers Theo Papatheodorou, Helen Pritchard, Rachel Falconer, Atau Tanaka, Andy Lomas, Evan Raskob and staff Anna Clow, Pete Mackenzie, and Konstantin Leonenko for their feedback, input, and support. 
+ <br> <br>
+Thanks to my classmates Eevi Rutanen, Eirini Kalaitzidi, Owen Planchart, Teodora Fartan, Aaron Dore, Ankita Anand, George Simms, Harry Morley, and Raphael Theolade for their help.
+ <br> <br>
+Special thanks to Rachel Clancy and Aida Sancho-Lopez for their help with the video footage.</p1>
+ </div>
+
+
+   </div>
+	 <div class="col-1 col-xl-2"></div>
+</div>
+	 
+  
+
+	 
+	
+	 <!-- div 3 Bottom Margin -->
+<div class="row" style="height:80px;">
+<div class="col-12"></div>
+</div>
+	 
+	 
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+	
+  <script src="scripts/image-swap.js"></script>
+	
+</body>
+</html>
+	 

@@ -1,0 +1,175 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Rachel Max is a designer, art director, and creative coder">
+    <meta name="keywords" content="Rachel Max, London, Hamburg, San Francisco, NYC, digital product design, designer, interaction design, UI and UX design, motion design, physical computing, code-based work, interactive, new media, immersive, emerging technology">
+    <meta name="author" content="Rachel Max">
+	<meta property="og:image" content="images/R_Circle.jpg" width="200"/>
+    <link rel="shortcut icon" href="ico/Rachel.ico">
+
+
+<title>Cubular Lines</title>
+
+	
+	  <link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/site_style.css" rel="stylesheet">
+	<link href="css/portfolio_style.css" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+
+</head>
+
+
+<body>
+
+<!-- NAV     -->    
+        
+    <div id="nav-placeholder">
+    </div>
+    
+<script>
+    $.get("navigation.html", function(data){
+        $("#nav-placeholder").replaceWith(data);
+    });
+</script> 
+
+<!--end nav --> 
+	
+	
+		 <!-- Margin Div -->
+		   <div class="row" style="height: 20px;">
+            <div class="col-12"></div>
+        </div><!-- end of Margin Div -->
+ 
+	
+	<!-- Begin page content -->
+	
+
+ <div class="row mt-3">
+    <div class="col-1 col-xl-2"></div>
+ <div class="col">
+
+<center><workpageh1>Cubular Lines</workpageh1></center>
+	 <br>
+ <p1>I love when code breaks free from the screen such as in Physical Computing when code becomes integrated in interactive objects. In this project, animated generative and procedural code becomes part of an interior space. It’s an illusion as light is merely distributed from a projector but the effect is still slightly magical. Created in C++ with openFrameworks and ofxPiMapper, my projection mapping project explores the form of a pyramid made of cubes. The project is comprised of 6 scenes, each lasting 30 seconds. A fade to and from black provides the transition between scenes. </p1>
+	  <br><br>
+	 
+    <div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/316330560" allowfullscreen></iframe>
+</div>
+	 
+	 <br>
+	<p1> This video is made by combining HD iPhone footage with video footage from a Lumix GX1 with a 20mm prime lens. I took several passes at recording - one with automatic focus so the video would go in and out of focus for a more artistic effect. The music is by Dan Deacon - <em>my own face is F word</em> from his album <em>Meetle Mice</em>.</p1>
+	 
+	 
+	<br><br><br><br> 
+<center><workpageh1>Concept & Research</workpageh1></center>
+	 <br>
+<p1>
+The hierarchy of the stacked cube in a pyramid shape offered a nice opportunity to explore staggering visuals and creating interesting animations at the intersections of the individual cubes. I drew inspiration from other projection mapping projects, especially those done on cubes:
+<br><br>
+<a href="https://www.youtube.com/watch?v=doHXNtTsQWk" target="_blank">Francesco Mori from 2016</a><br>
+<a href="https://www.youtube.com/watch?v=jr2lSih8J8A" target="_blank">Video projection mapping by Paul</a><br>
+<a href="https://www.youtube.com/watch?v=P1az8bbuOLg" target="_blank">3D Video Projection Mapping on Cubes with Quartz Composer by iasonf</a></p1>
+
+ <div class="container mt-5">
+	 	 <center>
+			 <workpageh1>Previzualization</workpageh1><br>
+			 <figure class="figure mx-auto mt-3">	
+<img src="images/Portfolio/CubularLines/Faces.gif" class="figure-img img-fluid" alt="Responsive Figure">				
+</figure> </center>
+	  </div>
+	 
+	 
+<br><br> 
+<center><workpageh1>Project Reflection</workpageh1></center>
+ <br>
+	 
+<p1>
+This project offered an opportunity to play, learn, and grow - to design something on paper and then figure about how to code my own ideas. Any project involving writing code will take as much time as you give it and there is never enough time. Because of this I tried to keep my designs manageable and tried to code defensively. For example, I left the speed of each animation accessible and easily changeable with one variable. The transitions can be found quickly and modified to fit each scene. 
+	<br><br> 
+	Coming up with a color palette early in the process was helpful as it gave the project a sense of visual cohesion and a relationship between the scenes. openFrameworks has a ton of predefined colors which you can call by name in the code, but I wanted very specific colors so I defined my own. This was especially useful when I created a color vector for Scene 2 - Diagonal Rain.
+	<br><br> 
+	I kept my code lean, my scenes organized, everything complied and ran as designed, and I pushed myself considerably. I don't think I could have worked harder on this project actually, which is a lesson in itself.
+
+</p1>
+
+ <div class="container">
+	 	 <center>	 <figure class="figure mx-auto mt-5">	
+<img src="images/Portfolio/CubularLines/Futumani.png" class="figure-img img-fluid" alt="Responsive Figure">				
+</figure> 
+	 	 </center>
+	  </div>
+		
+<center><workpageh1>References</workpageh1></center>
+	 <br>
+<p1>
+Scene 2, Diagonal Rain was inspired by the album cover for <a href="https://futumani.bandcamp.com/album/eliss-ep" target="_blank">Eliss by Futumani</a>. I discovered this album after reading about the game Eliss in Processing by Casey Reas and Ben Fry. I was interested to play any game made in Processing and I found that I loved the soundtrack and audio cues. <br><br> 
+Scene 6 was designed and coded in Processing by <a href="http://sasj.nl" target="_blank">Saskia Freeke</a>. I love her work and was pleased that one of our assignments was to take one of her Processing projects and change the JAVA into C++. <br><br> 
+In many ways I find coding in Processing easier and actually used it as a first step on the Diagonal Rain scene (scene 2). Many coders suggest manipulating other people’s code to make it your own but I found when I changed the circles to other shapes, that the intersections of the cube corners were less engaging. I changed the timing of Saskia's animation and colors slightly but I couldn’t bring myself to change her work too much. As I have five original scenes, I figured it was ok to include one Saskia scene.
+<br><br> 
+I drew a ton of inspiration and guidance from the <a href="https://openframeworks.cc/ofBook/chapters/foreword.html" target="_blank">ofBook</a>, <a href="https://www.amazon.co.uk/Mastering-openFrameworks-Creative-Coding-Demystified/dp/1849518041" target="_blank">Mastering openFrameworks: Creative Coding Demystified</a> by Yanc Chris, and the <a href="https://www.youtube.com/playlist?list=PL4neAtv21WOmrV8z9rSzL20QpdLU1zJLr" target="_blank"> openFrameworks course by Lewis Lepton</a>.</p1>
+
+	 </div>
+	 <div class="col-1 col-xl-2"></div>
+	 </div>
+	 
+   <div class="container mt-5 col-10 col-xl-8">
+				 <center><workpageh1>Code Snippets</workpageh1></center>
+		<div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="3000">
+  <div class="carousel-inner mt-2">
+    <div class="carousel-item-active">
+      <img class="d-block w-100" src="images/Portfolio/CubularLines/CL_Carousel/CL_Carousel_1.jpg" alt="1">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="images/Portfolio/CubularLines/CL_Carousel/CL_Carousel_2.jpg" alt="2">
+    </div>
+	      <div class="carousel-item">
+      <img class="d-block w-100" src="images/Portfolio/CubularLines/CL_Carousel/CL_Carousel_3.jpg" alt="3">
+    </div>
+	        <div class="carousel-item">
+      <img class="d-block w-100" src="images/Portfolio/CubularLines/CL_Carousel/CL_Carousel_4.jpg" alt="4">
+    </div>
+	      <div class="carousel-item">
+      <img class="d-block w-100" src="images/Portfolio/CubularLines/CL_Carousel/CL_Carousel_5.jpg" alt="5">
+    </div>
+	        <div class="carousel-item">
+      <img class="d-block w-100" src="images/Portfolio/CubularLines/CL_Carousel/CL_Carousel_6.jpg" alt="6">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+	</div>
+
+
+	 
+  
+
+	 
+	
+	 <!-- div 3 Bottom Margin -->
+<div class="row" style="height: 50px;">
+<div class="col-12"></div>
+</div>
+	 
+	 
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+	
+  <script src="scripts/image-swap.js"></script>
+	
+</body>
+</html>
+	 

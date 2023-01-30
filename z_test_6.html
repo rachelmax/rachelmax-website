@@ -1,0 +1,496 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Rachel Max is a designer and creative director">
+  <meta name="keywords"
+    content="Rachel Max, Dublin, Washington DC, London, digital product design, designer, interaction design, UI, UX motion design, physical computing, code-based work, interactive, new media, immersive, emerging technology">
+  <meta name="author" content="Rachel Max">
+  <meta property="og:image" content="images/R_Circle.jpg" width="200" />
+  <link rel="shortcut icon" href="ico/Rachel.ico">
+
+
+  <title>Testing Code 6</title>
+<!-- //////////// contains side menu for computers and top menu for mobile - 
+  content needs to be duplicated because of the scrollspy ID and some padding issues  ///////////////// -->
+
+
+
+  <link href="css/casestudy.css" rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+</head>
+
+
+
+<body>
+
+
+  <div id="nav-placeholder">
+  </div>
+
+  <script>
+    $.get("/navigation.html", function (data) {
+      $("#nav-placeholder").replaceWith(data);
+    });
+  </script>
+
+  <!--  END NAV   -->
+
+
+
+  <div class="pt-1" style="height:500px; background:grey;">
+  </div>
+
+
+
+  <!-- //////////// FOR SM-XL  ///////////////// -->
+
+    <!-- //////////// SIDE NAV  ///////////////// -->
+  <div class="container-12 d-none d-md-block">
+    <div class="row">
+      <div class="col-3 col-lg-2">
+        <nav id="sidenav-1" class="h-100">
+          <nav class="nav nav-pills flex-column sticky-top gap-3 mt-3">
+            <a class="nav-link" href="#item1">Problem</a>
+            <a class="nav-link" href="#item2">Team & Role</a>
+            <a class="nav-link" href="#item3">Research</a>
+            <a class="nav-link" href="#item4">Iterations</a>
+            <a class="nav-link" href="#item5">Results</a>
+          </nav>
+        </nav>
+      </div>
+
+   
+  
+
+
+  <!-- //////////// CONTENT  ///////////////// -->
+
+  <div class="col" style="padding-right:40px;">
+    <div data-bs-spy="scroll" data-bs-target="#sidenav-1" data-bs-smooth-scroll="true" class="scrollspy-p" tabindex="0">
+
+      <div class="mt-3" id="item1">
+        <h5>Item 1</h5>
+        <p1>This is some placeholder content for the scrollspy page. Note that as you scroll down the page, the
+          appropriate navigation link is highlighted. It's repeated throughout the component example. We keep adding
+          some more example copy here to emphasize the scrolling and highlighting.
+
+          Keep in mind that the JavaScript plugin tries to pick the right element among all that may be visible.
+          Multiple visible scrollspy targets at the same time may cause some issues.This is some placeholder content for
+          the scrollspy page. Note that as you scroll down the page, the appropriate navigation link is highlighted.
+          It's repeated throughout the component example. We keep adding some more example copy here to emphasize the
+          scrolling and highlighting.
+
+          Keep in mind that the JavaScript plugin tries to pick the right element among all that may be visible.
+          Multiple visible scrollspy targets at the same time may cause some issues.<br><br>
+          This is some placeholder content for the scrollspy page. Note that as you scroll down the page, the
+          appropriate navigation link is highlighted. It's repeated throughout the component example. We keep adding
+          some more example copy here to emphasize the scrolling and highlighting.
+
+          Keep in mind that the JavaScript plugin tries to pick the right element among all that may be visible.
+          Multiple visible scrollspy targets at the same time may cause some issues.This is some placeholder content for
+          the scrollspy page. Note that as you scroll down the page, the appropriate navigation link is highlighted.
+          It's repeated throughout the component example. We keep adding some more example copy here to emphasize the
+          scrolling and highlighting.
+
+          Keep in mind that the JavaScript plugin tries to pick the right element among all that may be visible.
+          Multiple visible scrollspy targets at the same time may cause some issues.
+        </p1>
+      </div>
+
+      <div class="mt-4" id="item2">
+        <h4>Item 2</h4>
+        <p1>This is some placeholder content for the scrollspy page. Note that as you scroll down the page, the
+          appropriate navigation link is highlighted. It's repeated throughout the component example. We keep adding
+          some more example copy here to emphasize the scrolling and highlighting.
+
+          Keep in mind that the JavaScript plugin tries to pick the right element among all that may be visible.
+          Multiple visible scrollspy targets at the same time may cause some issues.This is some placeholder content for
+          the scrollspy page. Note that as you scroll down the page, the appropriate navigation link is highlighted.
+          It's repeated throughout the component example. We keep adding some more example copy here to emphasize the
+          scrolling and highlighting.
+
+          Keep in mind that the JavaScript plugin tries to pick the right element among all that may be visible.
+          Multiple visible scrollspy targets at the same time may cause some issues.<br><br>
+          This is some placeholder content for the scrollspy page. Note that as you scroll down the page, the
+          appropriate navigation link is highlighted. It's repeated throughout the component example. We keep adding
+          some more example copy here to emphasize the scrolling and highlighting.
+
+          Keep in mind that the JavaScript plugin tries to pick the right element among all that may be visible.
+          Multiple visible scrollspy targets at the same time may cause some issues.This is some placeholder content for
+          the scrollspy page. Note that as you scroll down the page, the appropriate navigation link is highlighted.
+          It's repeated throughout the component example. We keep adding some more example copy here to emphasize the
+          scrolling and highlighting.
+
+          Keep in mind that the JavaScript plugin tries to pick the right element among all that may be visible.
+          Multiple visible scrollspy targets at the same time may cause some issues.</p1>
+      </div>
+
+
+      <div class="mt-4" id="item3">
+        <h4>Item 3</h4>
+        <p1>This is some placeholder content for the scrollspy page. Note that as you scroll down the page, the
+          appropriate navigation link is highlighted. It's repeated throughout the component example. We keep adding
+          some more example copy here to emphasize the scrolling and highlighting.
+
+          Keep in mind that the JavaScript plugin tries to pick the right element among all that may be visible.
+          Multiple visible scrollspy targets at the same time may cause some issues.This is some placeholder content for
+          the scrollspy page. Note that as you scroll down the page, the appropriate navigation link is highlighted.
+          It's repeated throughout the component example. We keep adding some more example copy here to emphasize the
+          scrolling and highlighting.
+
+          Keep in mind that the JavaScript plugin tries to pick the right element among all that may be visible.
+          Multiple visible scrollspy targets at the same time may cause some issues.<br><br>
+          This is some placeholder content for the scrollspy page. Note that as you scroll down the page, the
+          appropriate navigation link is highlighted. It's repeated throughout the component example. We keep adding
+          some more example copy here to emphasize the scrolling and highlighting.
+
+          Keep in mind that the JavaScript plugin tries to pick the right element among all that may be visible.
+          Multiple visible scrollspy targets at the same time may cause some issues.This is some placeholder content for
+          the scrollspy page. Note that as you scroll down the page, the appropriate navigation link is highlighted.
+          It's repeated throughout the component example. We keep adding some more example copy here to emphasize the
+          scrolling and highlighting.
+
+          Keep in mind that the JavaScript plugin tries to pick the right element among all that may be visible.
+          Multiple visible scrollspy targets at the same time may cause some issues.</p1>
+      </div>
+
+      <div class="mt-4" id="item4">
+        <h4>Item 4</h4>
+        <p1>This is some placeholder content for the scrollspy page. Note that as you scroll down the page, the
+          appropriate navigation link is highlighted. It's repeated throughout the component example. We keep adding
+          some more example copy here to emphasize the scrolling and highlighting.
+
+          Keep in mind that the JavaScript plugin tries to pick the right element among all that may be visible.
+          Multiple visible scrollspy targets at the same time may cause some issues.This is some placeholder content for
+          the scrollspy page. Note that as you scroll down the page, the appropriate navigation link is highlighted.
+          It's repeated throughout the component example. We keep adding some more example copy here to emphasize the
+          scrolling and highlighting.
+
+          Keep in mind that the JavaScript plugin tries to pick the right element among all that may be visible.
+          Multiple visible scrollspy targets at the same time may cause some issues.<br><br>
+          This is some placeholder content for the scrollspy page. Note that as you scroll down the page, the
+          appropriate navigation link is highlighted. It's repeated throughout the component example. We keep adding
+          some more example copy here to emphasize the scrolling and highlighting.
+
+          Keep in mind that the JavaScript plugin tries to pick the right element among all that may be visible.
+          Multiple visible scrollspy targets at the same time may cause some issues.This is some placeholder content for
+          the scrollspy page. Note that as you scroll down the page, the appropriate navigation link is highlighted.
+          It's repeated throughout the component example. We keep adding some more example copy here to emphasize the
+          scrolling and highlighting.
+
+          Keep in mind that the JavaScript plugin tries to pick the right element among all that may be visible.
+          Multiple visible scrollspy targets at the same time may cause some issues.</p1>
+      </div>
+
+      <div class="mt-4" id="item5">
+        <h4>Item 5</h4>
+        <p1>This is some placeholder content for the scrollspy page. Note that as you scroll down the page, the
+          appropriate navigation link is highlighted. It's repeated throughout the component example. We keep adding
+          some more example copy here to emphasize the scrolling and highlighting.
+
+          Keep in mind that the JavaScript plugin tries to pick the right element among all that may be visible.
+          Multiple visible scrollspy targets at the same time may cause some issues.This is some placeholder content for
+          the scrollspy page. Note that as you scroll down the page, the appropriate navigation link is highlighted.
+          It's repeated throughout the component example. We keep adding some more example copy here to emphasize the
+          scrolling and highlighting.
+
+          Keep in mind that the JavaScript plugin tries to pick the right element among all that may be visible.
+          Multiple visible scrollspy targets at the same time may cause some issues.<br><br>
+          This is some placeholder content for the scrollspy page. Note that as you scroll down the page, the
+          appropriate navigation link is highlighted. It's repeated throughout the component example. We keep adding
+          some more example copy here to emphasize the scrolling and highlighting.
+
+          Keep in mind that the JavaScript plugin tries to pick the right element among all that may be visible.
+          Multiple visible scrollspy targets at the same time may cause some issues.This is some placeholder content for
+          the scrollspy page. Note that as you scroll down the page, the appropriate navigation link is highlighted.
+          It's repeated throughout the component example. We keep adding some more example copy here to emphasize the
+          scrolling and highlighting.
+
+          Keep in mind that the JavaScript plugin tries to pick the right element among all that may be visible.
+          Multiple visible scrollspy targets at the same time may cause some issues.</p1>
+
+
+<!-- ////this is breaking the side menu when window is re-sized
+          <div class="container overflow-scroll p-3 mb-3 mb-md-0 me-md-3" style="max-width: 1200px; max-height: 500px;">
+            <p1>This is an example of using  on an element with set width and height dimensions. By design, this content will vertically scroll.</p1>
+           <img src="images/Portfolio/CAPinside/Messages/14.Messages_web_LG.png" alt="">
+          </div>
+      -->
+    
+        <div class="mt-3" style="height:500px; background:teal;">
+        </div>
+
+      </div>
+
+
+    </div>
+  </div>
+
+</div>
+
+</div>
+
+
+
+
+<!-- 
+https://www.sitepoint.com/jquery-refresh-page-browser-resize/-->
+
+
+<script>
+//refresh page on browser resize
+$(window).bind('resize', function(e)
+{
+  console.log('window resized..');
+  this.location.reload(false); /* false to get page from cache */
+  /* true to fetch page from server */
+});
+
+    </script>
+    
+    
+
+
+
+
+
+    <!-- ////////// FOR MOBILE //////////////  -->
+
+
+       <!-- //////////// TOP NAV  ///////////////// -->
+    <div class="container-12 d-sm-block d-md-none">
+      <nav id="navbar-topsm" class="navbar navbar-light bg-light px-2 sticky-top">
+        <ul class="nav nav-pills">
+          <li class="nav-item">
+            <a class="nav-link" href="#item1sm">The Problem</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#item2sm">Team & Role</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#item3sm">Research</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#item4sm">Iterations</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#item5sm">Results</a>
+          </li>
+  
+        </ul>
+      </nav>
+  
+  
+ <!-- //////////// CONTENT  ///////////////// -->
+    
+ <div class="col">
+  <div data-bs-spy="scroll" data-bs-target="#navbar-topsm" data-bs-smooth-scroll="true" class="scrollspy-p" tabindex="0">
+
+    <div class="mt-3" id="item1sm">
+      <h5>Item 1</h5>
+      <p1>This is some placeholder content for the scrollspy page. Note that as you scroll down the page, the
+        appropriate navigation link is highlighted. It's repeated throughout the component example. We keep adding
+        some more example copy here to emphasize the scrolling and highlighting.
+
+        Keep in mind that the JavaScript plugin tries to pick the right element among all that may be visible.
+        Multiple visible scrollspy targets at the same time may cause some issues.This is some placeholder content for
+        the scrollspy page. Note that as you scroll down the page, the appropriate navigation link is highlighted.
+        It's repeated throughout the component example. We keep adding some more example copy here to emphasize the
+        scrolling and highlighting.
+
+        Keep in mind that the JavaScript plugin tries to pick the right element among all that may be visible.
+        Multiple visible scrollspy targets at the same time may cause some issues.<br><br>
+        This is some placeholder content for the scrollspy page. Note that as you scroll down the page, the
+        appropriate navigation link is highlighted. It's repeated throughout the component example. We keep adding
+        some more example copy here to emphasize the scrolling and highlighting.
+
+        Keep in mind that the JavaScript plugin tries to pick the right element among all that may be visible.
+        Multiple visible scrollspy targets at the same time may cause some issues.This is some placeholder content for
+        the scrollspy page. Note that as you scroll down the page, the appropriate navigation link is highlighted.
+        It's repeated throughout the component example. We keep adding some more example copy here to emphasize the
+        scrolling and highlighting.
+
+        Keep in mind that the JavaScript plugin tries to pick the right element among all that may be visible.
+        Multiple visible scrollspy targets at the same time may cause some issues.
+      </p1>
+    </div>
+
+    <div class="mt-4" id="item2sm">
+      <h4>Item 2</h4>
+      <p1>This is some placeholder content for the scrollspy page. Note that as you scroll down the page, the
+        appropriate navigation link is highlighted. It's repeated throughout the component example. We keep adding
+        some more example copy here to emphasize the scrolling and highlighting.
+
+        Keep in mind that the JavaScript plugin tries to pick the right element among all that may be visible.
+        Multiple visible scrollspy targets at the same time may cause some issues.This is some placeholder content for
+        the scrollspy page. Note that as you scroll down the page, the appropriate navigation link is highlighted.
+        It's repeated throughout the component example. We keep adding some more example copy here to emphasize the
+        scrolling and highlighting.
+
+        Keep in mind that the JavaScript plugin tries to pick the right element among all that may be visible.
+        Multiple visible scrollspy targets at the same time may cause some issues.<br><br>
+        This is some placeholder content for the scrollspy page. Note that as you scroll down the page, the
+        appropriate navigation link is highlighted. It's repeated throughout the component example. We keep adding
+        some more example copy here to emphasize the scrolling and highlighting.
+
+        Keep in mind that the JavaScript plugin tries to pick the right element among all that may be visible.
+        Multiple visible scrollspy targets at the same time may cause some issues.This is some placeholder content for
+        the scrollspy page. Note that as you scroll down the page, the appropriate navigation link is highlighted.
+        It's repeated throughout the component example. We keep adding some more example copy here to emphasize the
+        scrolling and highlighting.
+
+        Keep in mind that the JavaScript plugin tries to pick the right element among all that may be visible.
+        Multiple visible scrollspy targets at the same time may cause some issues.</p1>
+    </div>
+
+
+    <div class="mt-4" id="item3sm">
+      <h4>Item 3</h4>
+      <p1>This is some placeholder content for the scrollspy page. Note that as you scroll down the page, the
+        appropriate navigation link is highlighted. It's repeated throughout the component example. We keep adding
+        some more example copy here to emphasize the scrolling and highlighting.
+
+        Keep in mind that the JavaScript plugin tries to pick the right element among all that may be visible.
+        Multiple visible scrollspy targets at the same time may cause some issues.This is some placeholder content for
+        the scrollspy page. Note that as you scroll down the page, the appropriate navigation link is highlighted.
+        It's repeated throughout the component example. We keep adding some more example copy here to emphasize the
+        scrolling and highlighting.
+
+        Keep in mind that the JavaScript plugin tries to pick the right element among all that may be visible.
+        Multiple visible scrollspy targets at the same time may cause some issues.<br><br>
+        This is some placeholder content for the scrollspy page. Note that as you scroll down the page, the
+        appropriate navigation link is highlighted. It's repeated throughout the component example. We keep adding
+        some more example copy here to emphasize the scrolling and highlighting.
+
+        Keep in mind that the JavaScript plugin tries to pick the right element among all that may be visible.
+        Multiple visible scrollspy targets at the same time may cause some issues.This is some placeholder content for
+        the scrollspy page. Note that as you scroll down the page, the appropriate navigation link is highlighted.
+        It's repeated throughout the component example. We keep adding some more example copy here to emphasize the
+        scrolling and highlighting.
+
+        Keep in mind that the JavaScript plugin tries to pick the right element among all that may be visible.
+        Multiple visible scrollspy targets at the same time may cause some issues.</p1>
+    </div>
+
+    <div class="mt-4" id="item4sm">
+      <h4>Item 4</h4>
+      <p1>This is some placeholder content for the scrollspy page. Note that as you scroll down the page, the
+        appropriate navigation link is highlighted. It's repeated throughout the component example. We keep adding
+        some more example copy here to emphasize the scrolling and highlighting.
+
+        Keep in mind that the JavaScript plugin tries to pick the right element among all that may be visible.
+        Multiple visible scrollspy targets at the same time may cause some issues.This is some placeholder content for
+        the scrollspy page. Note that as you scroll down the page, the appropriate navigation link is highlighted.
+        It's repeated throughout the component example. We keep adding some more example copy here to emphasize the
+        scrolling and highlighting.
+
+        Keep in mind that the JavaScript plugin tries to pick the right element among all that may be visible.
+        Multiple visible scrollspy targets at the same time may cause some issues.<br><br>
+        This is some placeholder content for the scrollspy page. Note that as you scroll down the page, the
+        appropriate navigation link is highlighted. It's repeated throughout the component example. We keep adding
+        some more example copy here to emphasize the scrolling and highlighting.
+
+        Keep in mind that the JavaScript plugin tries to pick the right element among all that may be visible.
+        Multiple visible scrollspy targets at the same time may cause some issues.This is some placeholder content for
+        the scrollspy page. Note that as you scroll down the page, the appropriate navigation link is highlighted.
+        It's repeated throughout the component example. We keep adding some more example copy here to emphasize the
+        scrolling and highlighting.
+
+        Keep in mind that the JavaScript plugin tries to pick the right element among all that may be visible.
+        Multiple visible scrollspy targets at the same time may cause some issues.</p1>
+    </div>
+
+    <div class="mt-4" id="item5sm">
+      <h4>Item 5</h4>
+      <p1>This is some placeholder content for the scrollspy page. Note that as you scroll down the page, the
+        appropriate navigation link is highlighted. It's repeated throughout the component example. We keep adding
+        some more example copy here to emphasize the scrolling and highlighting.
+
+        Keep in mind that the JavaScript plugin tries to pick the right element among all that may be visible.
+        Multiple visible scrollspy targets at the same time may cause some issues.This is some placeholder content for
+        the scrollspy page. Note that as you scroll down the page, the appropriate navigation link is highlighted.
+        It's repeated throughout the component example. We keep adding some more example copy here to emphasize the
+        scrolling and highlighting.
+
+        Keep in mind that the JavaScript plugin tries to pick the right element among all that may be visible.
+        Multiple visible scrollspy targets at the same time may cause some issues.<br><br>
+        This is some placeholder content for the scrollspy page. Note that as you scroll down the page, the
+        appropriate navigation link is highlighted. It's repeated throughout the component example. We keep adding
+        some more example copy here to emphasize the scrolling and highlighting.
+
+        Keep in mind that the JavaScript plugin tries to pick the right element among all that may be visible.
+        Multiple visible scrollspy targets at the same time may cause some issues.This is some placeholder content for
+        the scrollspy page. Note that as you scroll down the page, the appropriate navigation link is highlighted.
+        It's repeated throughout the component example. We keep adding some more example copy here to emphasize the
+        scrolling and highlighting.
+
+        Keep in mind that the JavaScript plugin tries to pick the right element among all that may be visible.
+        Multiple visible scrollspy targets at the same time may cause some issues.</p1>
+
+
+        <div class="overflow-auto" style="max-height: 500px;">
+            <p1>This is an example of using  on an element with set width and height dimensions. By design, this content will vertically scroll.</p1>
+           <img src="images/Portfolio/CAPinside/Messages/14.Messages_web_LG.png" alt="">
+          </div>
+          
+
+      <div class="mt-3" style="height:100px; background:teal;">
+      </div>
+
+    </div>
+
+
+  </div>
+</div>
+
+  </div>
+
+
+
+  <script src="scripts/image-swap.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+
+  <script src="https://code.jquery.com/jquery-3.6.3.slim.js"
+    integrity="sha256-DKU1CmJ8kBuEwumaLuh9Tl/6ZB6jzGOBV/5YpNE2BWc=" crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"
+    integrity="sha512-2rNj2KJ+D8s1ceNasTIex6z4HWyOnEYLVC3FigGOmyQCZc2eBXKgOxQmo3oKLHyfcj53uz4QMsRCWNbLd32Q1g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+
+  <!--       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+
+      -->
+
+
+
+  <script src="scripts/image-swap.js"></script>
+
+
+</body>
+
+</html>

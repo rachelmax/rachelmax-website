@@ -1,0 +1,197 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Rachel Max is a designer, art director, and creative coder">
+    <meta name="keywords" content="Rachel Max, London, Hamburg, San Francisco, NYC, digital product design, designer, interaction design, UI and UX design, motion design, physical computing, code-based work, interactive, new media, immersive, emerging technology">
+    <meta name="author" content="Rachel Max">
+	<meta property="og:image" content="images/R_Circle.jpg" width="200"/>
+    <link rel="shortcut icon" href="ico/Rachel.ico">
+
+
+<title>Using Machine Learning to Transmogrify Physical Input</title>
+
+	
+	  <link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/site_style.css" rel="stylesheet">
+	<link href="css/portfolio_style.css" rel="stylesheet">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+
+</head>
+
+
+<body>
+
+<!-- NAV     -->    
+        
+    <div id="nav-placeholder">
+    </div>
+    
+<script>
+    $.get("navigation.html", function(data){
+        $("#nav-placeholder").replaceWith(data);
+    });
+</script> 
+
+<!--end nav --> 
+	
+	
+		 <!-- Margin Div -->
+		   <div class="row" style="height: 20px;">
+            <div class="col-12"></div>
+        </div><!-- end of Margin Div -->
+ 
+	
+	<!-- Begin page content -->
+	
+
+ <div class="row">
+    <div class="col-1 col-xl-2"></div>
+ <div class="col">
+<br>
+<center><workpageh1>Using Machine Learning to Transmogrify Physical Input</workpageh1></center>
+	 <br>
+ <p1>In the vein of turing one thing into another, in this project I use Machine Learning and Gene Kogan's Doodle Classifier to transmogrify physical drawings into sound
+explorations. The project consists of a main piece in which
+doodles trigger diverse soundscapes (Sounds of New York City,
+Rain & Thunder, Crickets in the jungle, and Birdsong) and three
+accompanying experiments which further explore the concept, the
+Doodle Classifier tool, and a final experiment
+which reimagines the main soundscape piece using Regression as
+opposed to Classification. This project was inspired by <a href="https://vimeo.com/197026662" target="_blank">Doodle Tunes</a> by <a href="https://andreasrefsgaard.dk" target="_blank">Andreas Refsgaard</a> and <a href="http://genekogan.com" target="_blank">Gene Kogan</a>.</p1>
+	  <br><br>
+	 
+    <div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/335007529" allowfullscreen></iframe>
+</div>
+	 
+	 
+	<br><br> 
+<center><workpageh1>Creative Motivation</workpageh1></center>
+	 <br>
+<p1>
+By studying and practicing tools used in
+Machine Learning, my hope is to demystify terminology and
+practices of machine learning, deep learning, and AI. Moreover,
+my goal is to use this newly acquired power for good(!) and to
+explore making my interactive projects and overall design
+practice more meaningful and engaging.
+	<br><br>
+The benefits of Machine Learning in Creative Practice
+that I gather to date are: <br><br>
+	<quote>1) A project can be
+uniquely personalized by creating an interaction that works best
+for the performer.</quote><br>
+	<quote>2) The interaction, especially that of audio based projects, can be refined to enable precise controlled
+output as opposed to using a sensor or input alone.</quote><br><br>
+<quote>	3) During production there is a strong feeling of collaboration between the designer/performer and the computer/software.</quote><br><br>
+<quote>	4) Once the piece is finsihed and is on display, the participant holds the power</quote>
+	<br><br>
+	In his <a href="http://andreasrefsgaard.dk/article-for-digimag/" target="_blank">article for Digimag</a> in
+the Summer of 2017, Danish Creative Technologist Andreas
+Refsgaard writes, “by enabling people to decide upon and train
+their own unique controls for a system, the creative power
+shifts from the designer of a system to the person interacting
+with it.” <br><br>
+This is somewhat reminiscent of early Dadaist art where for the
+first time, the role of the artist as skilled creator was
+disrupted. When Marcel Duchamp presented his Readymades and
+elevated a mass-produced object as opposed to painting an
+original artwork, the distance between viewer and artist was
+closed. The participant was required to engage with the art to
+complete the work and therefore the artist and the work itself,
+were irrelevant without the contribution of a viewer. In Dadaism
+ the spectator is empowered and in digital art involving machine
+learning, the person interacting with the work is empowered.
+	<br><br>
+Beyond the shift of power, I wanted to explore the idea of collaboration between computer and designer. This can be seen in Cat Chorus which uses continuous OSC messages sent from the Doodle Classifier to MAX. I control the inputs and have a general sense of which sounds will be triggered, but whether I draw the samples well, whether the classes will be interpreted correctly, what messages are sent, the frequency of those messages, and how MAX will interpret those messages are all out of my control.
+	
+	<br><br>
+	
+		 <center><workpageh1>Cat Chorus</workpageh1></center>
+	     <div class="embed-responsive embed-responsive-21by9">
+  <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/335194688" allowfullscreen></iframe>
+</div>	
+	<br>
+	
+To a lessor degree this collaboration is explored in the main piece, Doodle Soundscapes. As opposed to Cat Chorus, the doodles were drawn in advance in order to be consistent with the training set. The classify button is pressed only when the parameters have been optimized and the paper is aligned well with the webcam. There is still a level of controlled chance because it is unclear what part of the soundscape will be played when triggered.
+
+	<br><br>
+
+The inimitable science fiction writer <a href="https://en.wikipedia.org/wiki/Clarke's_three_laws" target="_blank">Arthur C. Clarke wrote</a>,
+“any sufficiently advanced technology is indistinguishable from
+magic” and being able to write code, understand the tools used,
+and not be limited by a lack of ability allows one to be the
+magician - to craft the spectacle and experience. Inputs such a
+Leap Motion or small imperceptible sensors allow an interaction
+to feel and look magical. An invisible interface also allows for less
+rigid physical interaction than traditional computer keyboard
+and mouse inputs. When touch-less, an interface has a greater
+propensity for discovery which is ultimately more engaging for
+the user. <br><br>
+Kogan’s Doodler Classifier is powerful but the input is limited to a static camera and the OSC messages even when running continuously, are limited a discrete class label output. The messages sent when using Regression are numeric and continuous, allowing for smooth manipulation of several outputs. To test an invisible interface, to free myself from the traditional computer inputs, and to compare both the experience and result of similar projects one made using Classification and other using Regression, I created a third experiment titled Leap Scapes.
+	
+	<br><br>
+	    <div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/335170320" allowfullscreen></iframe>
+</div>	 
+	 
+	<br>
+In Leap Scapes I use Wekinator to correlate specific Leap Motion hand positions and gestures to interact with volume sliders in MAX. The Leap allows for fluid touch free input and the trained samples and messages from Wekinator permit smooth and continuous transitions between four soundscapes. Although I programmed fades between the audio files in Doodle Soundscapes, the discrete classifications resulted in audio files being either on or off. In Leap Scapes regression allows for any or all sounds to be playing with a volume from inaudible to highly audible.
+	
+		<br><br>
+While this project was intended initially for myself as an
+exploration of machine learning, I could imagine a version of this idea being used in an
+engaging experiential installation or in an educational capacity
+in a museum setting. To test this, I made a fourth experiment titled Random Animals. An image of an animal is presented to a camera and animal sounds are played randomly upon classification. The goal is to align
+the animal with its corresponding sound. This would be an entertaining way of teaching children about animals while also engaging with the child.</p1>
+		<br><br>
+ <div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/335026784" allowfullscreen></iframe>
+</div>	
+	 
+ <br><br>
+
+<center><workpageh1>Project Reflection</workpageh1></center>
+	 <br>
+	 
+<p1>
+	 
+	 I paired Gene Kogan’s Doodle Classifier, both the binary app and the openFrameworks project file, with MAX 8 in order to create Doodle Soundscapes and Cat Chorus. I was initially unable to modify the openFrameworks project file to use an external camera so I turned to the binary and used my webcam. Eventually, I found a solution and modified the openFrameworks file to set up an external PlayStation Eye camera. This allowed me to point a camera at a flat service and make Cat Chorus.
+	 <br><br>
+When I began this project I had only a loose idea of my end goal and felt unsure of
+the concepts, procedures, and the tools available but in spite of that
+I think this project is playful and successful. With more
+time and better equipment the project could be modified to suit
+a number of implementations.
+	  </p1>
+
+	 
+
+
+	  </div>
+	 <div class="col-1 col-xl-2"></div>
+	 </div>
+
+
+
+	 <!-- div 3 Bottom Margin -->
+<div class="row" style="height: 50px;">
+<div class="col-12"></div>
+</div>
+	 
+	 
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+	
+  <script src="scripts/image-swap.js"></script>
+	
+</body>
+</html>
+	 
