@@ -1,0 +1,53 @@
+
+/*# for case study pages
+///////////////////////////////////////////////////////////////////*/
+
+
+
+#sidenav-1 .nav-link{
+  font-family:"Moon-Light", Helvetica Neue, sans-serif;
+font-size:18px;
+color: #737373;
+  line-height: 2;
+}
+
+  
+#sidenav-1 .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  border-bottom-right-radius: 10px; 
+  border-top-right-radius: 10px; 
+  border-bottom-left-radius: 0px; 
+  border-top-left-radius: 0px; 
+  color: #202020;
+  font-family:"Moon-Bold", Helvetica Neue, sans-serif;
+  background-color: #00BCDE;
+  }
+         
+
+  #sidenav-1.h-100 {
+    border-right: solid 0px #eaeaea;
+  }
+
+       
+#navbar-topsm .nav-link{
+  line-height: 1;
+  color: #737373;
+   }
+  
+  #navbar-topsm ul.nav a:hover { color: #DD0DE2 !important; }       
+         
+         
+  #navbar-topsm .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+   border-radius: 10px; 
+  color: #202020;
+    font-weight: bold;     
+  background-color: #00BCDE;
+      }
+         
+  pcasestd{
+   font-family:"ProximaNovaBold", Helvetica Neue, sans-serif;
+     font-weight:normal;
+      letter-spacing:0px;
+      line-height: 22px;
+      font-size:16px;
+  }  
+    

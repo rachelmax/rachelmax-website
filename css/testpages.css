@@ -1,0 +1,83 @@
+
+/*# for portfolio pages and fonts for test pages
+///////////////////////////////////////////////////////////////////*/
+
+
+
+@font-face {
+    font-family: ProximaNova;
+    src: local(ProximaNova_font), url('fonts/ProximaNova.ttf') format('opentype');
+}
+
+@font-face {
+    font-family: ProximaNovaThin;
+    src: local(ProximaNovaThin_font), url('fonts/ProximaNovaThin.otf') format('opentype');
+}
+
+@font-face {
+    font-family: ProximaNovaSemibold;
+    src: local(ProximaNovaSemibold_font), url('fonts/ProximaNovaSemibold.otf') format('opentype');
+}
+
+@font-face {
+    font-family: ProximaNovaBold;
+    src: local(ProximaNovaBold_font), url('fonts/ProximaNovaBold.ttf') format('opentype');
+}
+
+capinside14 {
+   color: #444444;
+ font-family:"ProximaNova", Helvetica Neue, sans-serif;
+   font-weight:normal;
+    letter-spacing:0px;
+    line-height: 20px;
+    font-size:14px;
+  padding: 0px;
+}
+
+
+capinside20 {
+   color: #FFFFFF;
+ font-family:"ProximaNova", Helvetica Neue, sans-serif;
+   font-weight:normal;
+  letter-spacing:0px;
+    line-height: 30px;
+    font-size:20px;
+}
+
+
+capinside16b {
+   color: #444444;
+ font-family:"ProximaNovaBold", Helvetica Neue, sans-serif;
+   font-weight:normal;
+    letter-spacing:0px;
+    line-height: 20px;
+    font-size:16px;
+  padding: 0px;
+}
+
+capinside20b {
+   color: #FFFFFF;
+ font-family:"ProximaNovaBold", Helvetica Neue, sans-serif;
+   font-weight:normal;
+    letter-spacing:0px;
+    line-height: 28px;
+    font-size:20px;
+  padding: 0px;
+}
+
+capinside34b {
+   color: #FFFFFF;
+ font-family:"ProximaNovaBold", Helvetica Neue, sans-serif;
+   font-weight:normal;
+    letter-spacing:0px;
+    line-height: 38px;
+    font-size:34px;
+}
+
+
+.jumbotron-cap
+{
+    padding-left: 16px;
+    background-color: #B8DECF !important; 
+	z-index: 0;
+}

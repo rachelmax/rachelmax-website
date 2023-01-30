@@ -1,0 +1,510 @@
+
+/* for portfolio pages with cards
+////////////////////////////////////////////*/
+
+body {
+  line-height: 1.2;
+  font-family: "Gotham-Light", sans-serif;
+  font-size: 15px;
+  color: #4c4c4c;
+  background-color: #fff;
+  overflow-x: hidden;
+}
+
+.section {   
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+
+/* Button style */ 
+
+
+buttonhover {
+  text-align:center;
+ font-family:"torus-regular", Helvetica Neue, sans-serif;
+ font-weight: normal;
+  letter-spacing:0px;
+  line-height: 20px;
+ font-size:16px;
+}
+
+.btn {
+  font-size: 16px;
+  font-family: "torus-regular";
+  padding: 6px 16px;
+  border-radius: 1px;
+  border: 0;
+  position: relative;
+  z-index: 1;
+  transition: .2s ease;
+}
+
+.btn:focus {
+  outline: 0;
+  box-shadow: none !important;
+}
+
+.btn:active {
+  box-shadow: none;
+}
+
+/*this is the button in the center of the project images and somehow the portfolio categories which remain white */
+
+.btn-sm {
+color: #e326a7; 
+font-size: 16px;
+padding: 6px 16px;
+}
+
+.btn-xs {
+color: #e326a7;
+padding: 6px;
+font-size: 16px;
+}
+
+.btn-outline-primary {
+	outline-color: #e326a7 !important;	
+}
+
+
+/*buttons on the portfolio bar /////////////////////*/
+
+
+.btn-primary {
+background:  #e326a7; 
+  color: #fff;
+}
+
+
+
+.rounded-lg {
+  border-radius: 15px;
+}
+
+
+/* lighter selected button color////////////////*/
+
+.btn-primary:active {
+  background: #e326a7 !important;
+}
+
+/* hover darker bg color///////////////////*/
+
+.btn-primary:hover {
+  background: #c2208f; 
+}
+
+.btn-primary.focus, .btn-primary.active {
+  background: #7917b3 !important;
+  box-shadow: none !important;
+}
+
+.btn-transparent {
+  background: transparent;
+  color: #f94fc3;
+  font-weight: bold;
+}
+
+.btn-transparent:active, .btn-transparent:hover {
+  color: #f94fc3;
+}
+
+a,
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+
+a,
+button,
+select {
+  cursor: pointer;
+  transition: .2s ease;
+}
+
+a:focus,
+button:focus,
+select:focus {
+  outline: 0;
+}
+
+
+
+
+
+/*////Project Tiles HOVER //////////////////////*/
+
+
+
+.hover-wrapper {
+  overflow: hidden;
+}
+
+.hover-wrapper img {
+  transition: .3s ease;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.hover-wrapper:hover img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+
+.hover-wrapper:hover .hover-overlay {
+  opacity: 1;
+  visibility: visible;
+}
+
+
+.hover-overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 0;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  visibility: hidden;
+  transition: .3s ease;
+}
+
+
+.hover-content {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 20%;
+  right: 20%;
+  text-align: center;
+}
+
+/*///////////for main Portfolio page with big buttons//////*/
+
+
+.hover-wrapper2 {
+  overflow: hidden;
+}
+
+.hover-wrapper2 img {
+  transition: .3s ease;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.hover-wrapper2:hover img {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+
+.hover-wrapper2:hover .hover-overlay2 {
+  opacity: 1;
+  visibility: visible;
+}
+
+
+.hover-overlay2 {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 0;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  visibility: hidden;
+  transition: .3s ease;
+}
+
+
+.hover-content2 {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 32%;
+  right: 32%;
+  text-align: center;
+}
+
+
+/*////////////////////////REMOVED THINGS
+
+
+a.text-dark:hover {
+  color: #fff !important;
+}
+
+a:hover {
+color: #26c8e2; /*  this is for the button hover to see pages
+}
+
+.slick-slide {
+  outline: 0;
+}
+
+.section-title {
+  margin-bottom: 80px;
+  font-family: "Gotham-Book";
+}
+
+.bg-cover {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+
+.overlay {
+  position: relative;
+}
+
+.overlay::before {
+  position: absolute;
+  content: '';
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: #fff; 
+  opacity: .5;
+}
+
+.outline-0 {
+  outline: 0 !important;
+}
+
+.d-unset {
+  display: unset !important;
+}
+
+
+
+.bg-primary {
+  background: #41228e !important;
+}
+
+.bg-gray {
+  background: #eaeaea !important;
+}
+
+.text-primary {
+  color: #e326a7 !important;
+}
+
+.text-color {
+  color: #e326a7;
+}
+
+.text-dark {
+color: #e326a7 !important;
+}
+
+.text-light {
+  color: #999999 !important;
+}
+
+.zindex-1 {
+  z-index: 1;
+}
+
+
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.shadow {
+  box-shadow: 0px 18px 39.1px 6.9px rgba(224, 241, 255, 0.34) !important;
+}
+
+.bg-dark {
+  background-color: #222222 !important;
+}
+
+
+.icon {
+  font-size: 45px;
+}
+
+.icon-bg {
+  height: 100px;
+  width: 100px;
+  line-height: 100px;
+  text-align: center;
+}
+
+.icon-light {
+  color: #c8d5ef;
+}
+*/
+
+/* slick slider 
+.slick-dots {
+  text-align: center;
+  padding-left: 0;
+}
+
+.slick-dots li {
+  display: inline-block;
+  margin: 2px;
+}
+
+.slick-dots li.slick-active button {
+  background: #fff;
+  width: 25px;
+}
+
+.slick-dots li button {
+  height: 6px;
+  width: 12px;
+  background: rgba(255, 255, 255, 0.5);
+  color: transparent;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: .2s ease;
+  border: 0;
+}
+*/
+
+/* card 
+
+.card {
+  border: 0;
+}
+
+.card-header {
+  border: 0;
+}
+
+.card-footer {
+  border: 0;
+}
+
+
+
+
+
+.navigation {
+  padding: 40px 130px;
+  transition: .3s ease;
+}
+
+.navigation.nav-bg {
+  background-color: #41228e;
+  padding: 15px 100px;
+}
+
+.navbar .nav-item .nav-link {
+  font-family: "Gotham-Book";
+  text-transform: uppercase;
+  padding: 15px;
+}
+
+.navbar .nav-item.active {
+  font-weight: bold;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #fff;
+}
+
+
+
+
+
+
+::-moz-selection {
+  background: #e326a7;
+  color: #fff;
+}
+
+::selection {
+  background: #e326a7;
+  color: #fff;
+}
+
+
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+@media (max-width: 991px) {
+  .navigation.nav-bg {
+    padding: 15px 20px;
+  }
+}
+
+@media (max-width: 991px) {
+  .navigation {
+    padding: 20px;
+    background: #41228e;
+  }
+}
+@media (max-width: 767px) {
+  .hero-area {
+    padding: 250px 0 150px;
+    overflow: hidden;
+  }
+}
+
+.hover-shadow {
+  transition: .2s ease;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0px 18px 40px 8px rgba(224, 241, 255, 0.54) !important;
+}
+
+ 
+a.whitelink {
+    color: #fff;
+  text-decoration: none;
+}
+
+a.whitelink:hover {text-decoration: none; color: #fff;; }
+
+
+
+hr.style3 {
+  border-top: 1px dashed #8c8b8b;
+}
+
+p, .paragraph {
+  font-weight: 400;
+  color: #4c4c4c;
+  font-size: 15px;
+  line-height: 1.8;
+  font-family: "Gotham-Light", sans-serif;
+}
+
+p-lg, .paragraph-lg {
+  font-size: 22px;
+}
+
+h2, h3, h4, h5, h6 {
+  font-family: "Gotham-Light", serif;
+  line-height: 1.2;
+}
+
+
+
+
+
+
+//////////////////*/

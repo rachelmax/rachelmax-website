@@ -1,0 +1,626 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+@font-face {
+    font-family: Gotham-Light;
+    src: local(Gotham-Light_font), url('fonts/NeutraTextTF-Light.otf') format('opentype');
+}
+
+@font-face {
+    font-family: Gotham-Book;
+    src: local(Gotham-Book_font), url('fonts/Gotham-Book.otf') format('opentype');
+}
+
+@font-face {
+    font-family: torus-light;
+    src: local(torus-light_font), url('fonts/torus-light.otf') format('opentype');
+}
+
+@font-face {
+    font-family: torus-regular;
+    src: local(torus-regular_font), url('fonts/torus-regular.otf') format('opentype');
+}
+
+@font-face {
+    font-family: TheOnlyException;
+    src: local(TheOnlyException_font), url('fonts/TheOnlyException.ttf') format('opentype');
+}
+
+@font-face {
+    font-family: NeutraTextTF-Book;
+    src: local(NeutraTextTF-Book_font), url('fonts/NeutraTextTF-Book.otf') format('opentype');
+}
+
+
+@font-face {
+    font-family: NeutraTextTF-Light;
+    src: local(NeutraTextTF-Light_font), url('fonts/NeutraTextTF-Light.otf') format('opentype');
+	}
+
+@font-face {
+    font-family: Moon-Light;
+    src: local(Moon-Light_font), url('fonts/Moon Light.otf') format('truetype');
+}
+
+@font-face {
+    font-family: Moon-Bold;
+    src: local(Moon-Bold_font), url('fonts/Moon Bold.otf') format('truetype');
+}
+
+
+
+/*/////////////// Nav Stuff  ///////////////*/
+.navbar-default { background: #fff;}
+.navbar-brand { padding-left: 6px}
+.main-nav { height:50px;}
+.pointer { cursor:pointer }
+
+
+.navtext {
+    font-family:"Moon-Light", Helvetica Neue, sans-serif;
+    font-weight: normal;
+    letter-spacing:0px;
+     font-size:20px;
+	  padding-left: 36px;
+    padding-right: 36px;
+    line-height: 1.5em;
+}
+
+.navtext a:link {
+    color: #000000;
+    text-decoration: none;
+}
+
+.navtext a:visited {
+    text-decoration: none;
+    color: #000000;
+}
+.navtext a:hover {
+    text-decoration: none;
+    color: #26c8e2;
+}
+
+.navtext a:active {
+    text-decoration: none;
+    color: #26c8e2;
+}
+
+
+
+a:link {
+    color: #e326a7;
+    text-decoration: none;
+}
+a:visited {
+    text-decoration: none;
+    color: #e326a7;
+}
+a:hover {
+    text-decoration: none;
+    color: #26c8e2;
+}
+a:active {
+    text-decoration: none;
+    color: #e326a7;
+}
+
+
+
+
+
+/*/////////////// Text Formatting  ///////////////*/
+
+h1 {
+    font-family:"Moon-Light", Helvetica Neue, sans-serif;
+    font-weight: normal;
+    letter-spacing:0px;
+     font-size:24px;
+	  padding-top: 20px;
+}
+
+h1nav {
+    font-family:"Moon-Bold", Helvetica Neue, sans-serif;
+    font-weight: normal;
+    letter-spacing:-1px;
+     font-size:24px;
+      padding-left: 10px;
+      color: #000000 !important;
+}
+
+h2 {
+    font-family:"Moon-Light", Helvetica Neue, sans-serif;
+    font-weight: normal;
+    letter-spacing:0px;
+     font-size:34px;
+	  padding-top: 0px;
+}
+
+
+abouttext {
+    font-family:"Moon-Light", Helvetica Neue, sans-serif;
+    font-weight: normal;
+     letter-spacing:0px;
+	line-height: 36px;
+     font-size:20px;
+}
+
+abouttext2 {
+    font-family:"NeutraTextTF-Light", Helvetica Neue, sans-serif;
+   font-weight:normal;
+    line-height: 30px;
+    font-size:19px;
+	padding: 0px;
+}
+
+
+p1 {
+        color: #000000;
+        font-family:"NeutraTextTF-Light", Helvetica Neue, sans-serif;
+   font-weight:normal;
+    letter-spacing:0px;
+    line-height: 28px;
+    font-size:18px;
+	padding: 0px;
+}
+p1_colorbg {
+    color: #FFFFFF;
+	font-family:"NeutraTextTF-Book", Helvetica Neue, sans-serif;
+   font-weight:normal;
+    letter-spacing:0px;
+    line-height: 30px;
+    font-size:18px;
+	padding: 0px;
+}
+p1_bold {
+	font-family:"NeutraTextTF-Book", Helvetica Neue, sans-serif;
+   font-weight:normal;
+    letter-spacing:0px;
+    line-height: 30px;
+    font-size:18px;
+	padding: 0px;
+}
+p2 {
+    font-family:"NeutraTextTF-light", Helvetica Neue, sans-serif;
+   font-weight:normal;
+    letter-spacing:0px;
+    line-height: 26px;
+    font-size:18px;
+}
+quote {
+        margin-left:50px;
+        font-family:"NeutraTextTF-Light", Helvetica Neue, sans-serif;
+        font-weight: normal;
+        letter-spacing:1px;
+        font-size:16px;
+}
+
+arrow{
+        font-family:"NeutraTextTF-Book", Helvetica Neue, sans-serif;
+        font-weight: normal;
+        padding: 10px;
+        letter-spacing:1px;
+        font-size:20px;
+		vertical-align: -6%;
+}
+blogheader {
+       text-align:center;
+       font-family:"NeutraTextTF-Book", Helvetica Neue, sans-serif;
+       font-weight: normal;
+        letter-spacing:0px;
+        font-size:26px; 
+        padding: 0px;
+}
+blogtitle {
+		text-align:center;
+        font-family:"NeutraTextTF-Book", Helvetica Neue, sans-serif;
+        font-weight: normal;
+        letter-spacing:0px;
+        line-height: 28px;
+        font-size:22px;
+}
+blogbold {
+		text-align:center;
+        font-family:"NeutraTextTF-Book", Helvetica Neue, sans-serif;
+        font-weight: normal;
+        line-height: 30px;
+        font-size:18px;
+}
+blogvideotext {
+        font-family:"NeutraTextTF-Light", Helvetica Neue, sans-serif;
+        font-weight: normal;
+        letter-spacing:1px;
+        line-height: 24px;
+        font-size:16px; 
+}
+workpageh1 {
+        color: #e326a7;
+		font-family:"Moon-Bold", Helvetica Neue, sans-serif;
+        font-weight: normal;
+        letter-spacing:-1px;
+        line-height: 42px;
+        font-size:26px;
+}
+workpageh2 {
+        color: #000000;
+		font-family:"Moon-Light", Helvetica Neue, sans-serif;
+        font-weight: normal;
+        line-height: 20px;
+        font-size:20px;
+}
+cvsidetitle {
+        color: #000000;
+		font-family:"Moon-Light", Helvetica Neue, sans-serif;
+        font-weight: normal;
+        line-height: 50px;
+        font-size:24px;
+}
+cvsidebody {
+        color: #000000;
+	    font-family:"NeutraTextTF-Light", Helvetica Neue, sans-serif;
+   font-weight:normal;
+    letter-spacing:0px;
+    line-height: 36px;
+    font-size:18px;
+	padding: 0px;
+}
+descptext1{
+        color:#e326a7;
+		font-family:"torus-regular", Helvetica Neue, sans-serif;
+        font-weight: normal;
+/*		letter-spacing:.03em;*/
+        line-height: 20px;
+        font-size:16px; 
+}
+descptext2{
+		color:#000000;
+        font-family:"torus-light", Helvetica Neue, sans-serif;
+        font-weight: normal;
+        line-height: 20px;
+        font-size:14px;
+}
+
+
+
+descptext3{
+        color:#e326a7;
+        font-family:"torus-regular", Helvetica Neue, sans-serif;
+        font-weight: normal;
+        line-height: 24px;
+        font-size:18px; 
+}
+
+descptext4{
+        color:#000000;
+        font-family:"torus-light", Helvetica Neue, sans-serif;
+        font-weight: normal;
+        line-height: 22px;
+        font-size:16px;
+}
+
+
+process1 {
+    color: #3db5c9;
+	font-family:"NeutraTextTF-Book", Helvetica Neue, sans-serif;
+   font-weight:normal;
+    letter-spacing:0px;
+    line-height: 22px;
+    font-size:20px;
+	padding: 0px;
+}
+process2 {
+    color: #3db5c9;
+	font-family:"NeutraTextTF-Book", Helvetica Neue, sans-serif;
+   font-weight:normal;
+    letter-spacing:0px;
+    line-height: 22px;
+    font-size:20px;
+	padding: 0px;
+}
+
+footertext {
+	 color: #7f7f7f;
+    font-family:"Moon-Light", Helvetica Neue, sans-serif;
+   font-weight:normal;
+    letter-spacing:0px;
+    line-height: 26px;
+    font-size:16px;
+	padding: 0px;
+}
+
+
+
+
+  /*  the below is to make full screen images scale  */
+
+.image-widescreen{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow-y: hidden;
+}
+
+.image-widescreen img {
+  width: 100%;
+}
+
+  /*  ///////////// JUMBOTRON STUFF  /////////////*/
+
+.jumbotron {
+  position: relative;
+  overflow: hidden;
+  background-color:black;
+}
+.jumbotron video {
+	position: absolute;
+  z-index: 1;
+  top: 0;
+  width:100%;
+  height:100%;
+  /*  object-fit is not supported on IE  */
+  object-fit: cover;
+  opacity:0.5;
+margin: 0;
+    padding: 0;
+	overflow:hidden;
+}
+.jumbotron img {
+    z-index: 2;
+	position: absolute;
+ 	bottom: 0px;
+	top: 0px;
+ 	right: 0px;
+ 	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+
+.jumbotron .container {
+  z-index: 2;
+  position: relative;
+}
+
+.jumbotron-404
+{
+    padding-left: 16px;
+    background-color: #e326a7 !important;  
+	z-index: 0;
+}
+
+  /*  ///////////// CAROUSEL STUFF  /////////////*/
+
+
+.carousel-control-next,
+.carousel-control-prev {
+    filter: invert(100%);
+}
+
+.carousel-control-next {
+    margin-right: -40px;
+	
+}
+.carousel-control-prev  {
+    margin-left: -40px;
+}
+
+.carousel.carousel-fade .carousel-item {
+    display: block;
+    opacity: 0;
+    transition: opacity ease-out .7s;
+}
+
+.carousel.carousel-fade .carousel-item.active {
+    opacity: 1 !important;
+}
+
+
+  /*  ///////////// ANIMATING GRADIENT  /////////////*/
+
+
+.colors{
+      animation: colorchange 20s linear 1s infinite; 
+	/* animation-name followed by duration in seconds*/
+    /* could also use milliseconds (ms) something like 2.5s */
+	
+	/* Chrome and Safari */
+      -webkit-animation: colorchange 20s linear 0s infinite alternate; 
+
+    }
+
+    @keyframes colorchange
+    {
+      0%   {background: #c83ca7; color: #ffffff;}
+      25%  {background: #52229c; color: #ffffff;}
+      50%  {background: #236bd9; color: #ffffff;}
+      75% {background: #30b4e4; color: #ffffff;} 
+	  100% {background: #4cba97; color: #ffffff;}
+   }
+
+    @-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */
+    {
+       0%   {background: #c83ca7; color: #ffffff;}
+      25%  {background: #52229c; color: #ffffff;}
+      50%  {background: #236bd9; color: #ffffff;}
+      75% {background: #30b4e4; color: #ffffff;} 
+	  100% {background: #4cba97; color: #ffffff;}
+   }
+
+
+.
+/* /////////////  for LTUX mobile sign up page  /////////////// */
+
+.btn-11 {
+width: 350px;
+  background-color: #0072b1; /* something weird with formating so this is here to make btn-1 work right */
+}
+
+.btn-1 {
+    width: 350px;
+    background-color: #0072b1; /* Blue background */
+    border: none; /* Remove borders */
+    border-radius: 20px;
+    color: white; /* White text */
+    padding: 16px 16px 12px 16px; /* Some padding */
+    font-size: 26px; /* Set a font size */
+     font-weight: bold;
+       letter-spacing: -1px; 
+      cursor: pointer; /* Mouse pointer on hover */
+  }
+
+
+.btn-1:hover {
+  background-color: #075885; /* Green */
+}
+
+.btn-2 {
+  width: 350px;
+  background-color: #c72ab7; /* pink background */
+  border: none; /* Remove borders */
+  border-radius: 20px;
+  color: white; /* White text */
+  padding: 16px 16px 12px 16px; /* Some padding */
+  font-size: 26px; /* Set a font size */
+   font-weight: bold;
+     letter-spacing: -1px; 
+    cursor: pointer; /* Mouse pointer on hover */
+}
+
+.btn-2:hover {
+  background-color: #9c198e; /* Green */
+}
+
+
+.btn-3 {
+  width: 350px;
+  background-color: #2fadad; /* sea background */
+  border: none; /* Remove borders */
+  border-radius: 20px;
+  color: white; /* White text */
+  padding: 16px 16px 12px 16px; /* Some padding */
+  font-size: 26px; /* Set a font size */
+   font-weight: bold;
+        letter-spacing: -1px; 
+    cursor: pointer; /* Mouse pointer on hover */
+}
+
+.btn-3:hover {
+  background-color: #1d8c8c; /* Green */
+}
+
+
+.btn-4 {
+  width: 350px;
+  background-color: #721da3; /* purple background */
+  border: none; /* Remove borders */
+  border-radius: 20px;
+  color: white; /* White text */
+  padding: 16px 16px 12px 16px; /* Some padding */
+  font-size: 26px; /* Set a font size */
+   font-weight: bold;
+        letter-spacing: -1px; 
+    cursor: pointer; /* Mouse pointer on hover */
+}
+
+.btn-4:hover {
+  background-color: #500f75; /* Green */
+}
+
+.btn-5 {
+  width: 350px;
+  background-color: #6fa80c; /* green background */
+  border: none; /* Remove borders */
+  border-radius: 20px;
+  color: white; /* White text */
+  padding: 16px 16px 12px 16px; /* Some padding */
+  font-size: 26px; /* Set a font size */
+ font-weight: bold;
+        letter-spacing: -1px; 
+  cursor: pointer; /* Mouse pointer on hover */
+}
+
+.btn-5:hover {
+  background-color: #5b8513; /* Green */
+}
+
+/* /////////not sure abotu this stuff//////////// */
+
+a.blacklink {
+    color: #000;
+	text-decoration: none;
+}
+
+a.blacklink:hover {text-decoration: none; color:#26c8e2; }
+
+
+#message {
+    color: inherit;
+    opacity: 100%;
+  }
+
+  
+  img.no-resize {
+    min-width: 138px;
+  }
+  
+  img.border1
+  {
+     border: 1px solid #AAAAAA;
+  }
+  
+  .lineh1{
+     line-height: 2.5;
+  }
+  
+  ul.cv{
+      list-style-type: disc;
+      -webkit-columns: 2;
+      -moz-columns: 2;
+      columns: 2;
+      list-style-position: inside;
+  }
+  
+
+
+li:not(:last-child) {
+    margin-bottom: 5px;
+}
+
+hr.style3 {
+	border-top: 1px dashed #8c8b8b;
+}
+
+hr.style1 {
+         width: 80%;
+}
+
+hr.style2 {
+    border-top: 4px solid #575757;
+    border-radius: 2px;
+    width: 80%;
+}
+
+
+  /* removed things
+
+smbox {
+    width: 20px;
+    height: 20px;
+    margin: 0px;
+    border: 0px;
+    background-color: #51C4AC;
+  }
+  
+  .ci_green_bg{
+       background-color: #51C4AC;
+  }
+  
+
+
+
+
+
+  */

@@ -1,0 +1,43 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*  ///////////////////////////////// testing scrollmagic ///////////////////////////////// */
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.slide .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+    text-align: center;
+}
+
+.intro {
+    background: #305a5b;
+}
+
+.parallax {
+	max-width: 100%;
+	height: auto;
+    background: url(https://picsum.photos/id/201/1800/1400) 50% 0;
+}
+
+.slidein {
+    background: #e326a7;
+}
+
+.slidein2 {
+    background: #304b5b;
+}
+
+.slidein2 .row {
+    justify-content: space-around;
+}
+
+#left {
+    /*    transform: translateX(-1000px);*/
+}
